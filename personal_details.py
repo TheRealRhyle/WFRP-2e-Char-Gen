@@ -1,5 +1,4 @@
 from random import randint
-race = 'dwarf'
 
 
 def height(race, gender):
@@ -126,14 +125,38 @@ def birthplace(race):
         pop = randint(0, len(dict_sl['human'][1]) - 1)
         sl = str('A ' + str(dict_sl['human'][1][pop]) + ' in the province of ' + str(dict_sl['human'][0][region]))
     else:
-        # print(hl_roll)
         sl = dict_sl[race][hl_roll]
-    # print('len(dict_sl[race]): \t' + str(len(dict_sl[race]) - 1))
+
     return sl
 
-# birthplace('halfling')
+
+def get_names(race, gender):
+    dict_names = {
+        'dwarf': [['Anika', 'Asta', 'Astrid', 'Berta', 'Birgit', 'Dagmar', 'Elsa', 'Erika', 'Franziska', 'Greta', 'Hunni', 'Ingrid', 'Janna', 'Karin', 'Petra', 'Sigrid', 'Sigrun', 'Silma', 'Thylda', 'Ulla'], ['Bardin', 'Brokk', 'Dimzad', 'Durak', 'Garil', 'Gottri', 'Grundi', 'Hargin', 'Imrak', 'Kargun', 'Jotunn', 'Magnar', 'Mordrin', 'Nargond', 'Orzad', 'Ragnar', 'Snorri', 'Storri', 'Thingrim', 'Urgrim']],
+        'elf': [['Alane', 'Altronia', 'Davandrel', 'Eldril', 'Eponia', 'fanriel', 'Gallina', 'Halion', 'Iludil', 'Ionor', 'Lindara', 'Lorandara', 'Maruviel', 'Pelgrana', 'Siluvaine', 'Tallana', 'Ulliana', 'Vivandrel', 'Yuviel'], ['Aluthol', 'Amendil', 'Angran', 'Cavindel', 'Dolwen', 'Eldillor', 'Falandar', 'Farnoth', 'Gildiril', 'Harrond', 'Imhol', 'Larandar', 'Laurenor', 'Mellion', 'Mormacar', 'Ravandil', 'Torendil', 'Yavandir']],
+        'halfling': [['Agnes', 'Alice', 'Elena', 'Eva', 'Frida', 'Greta', 'Hanna', 'Heidi', 'Hilda', 'Janna', 'Karin', 'Lendi', 'Marie', 'Petra', 'Silma', 'Sophia', 'Susi', 'Theda', 'Ulla', 'Wanda'], ['Adam', 'Albert', 'Alfred', 'Axel', 'Carl', 'Edgar', 'Hugo', 'Jakob', 'Ludo', 'Max', 'Nuiklaus', 'Oskar', 'Paul', 'Ralf', 'Rudi', 'heo', 'Thomas', 'Udo', 'Viktor', 'Walter', ]],
+        'human': [['Alexa', 'Alfrida', 'Beatrix', 'Bianka', 'Carlott', 'Elfrida', 'Elise', 'Gabrielle', 'Gretchen', 'Hanna', 'Ilsa', 'Klara', 'Jarla', 'Ludmilla', 'Mathilde', 'Regina', 'Solveig', 'Theodora', 'Ulrike', 'Wertha'], ['Adelbert', 'Albrecht', 'Berthold', 'Dieter', 'Eckhardt', 'Felix', 'Gottfried', 'Gustav', 'Heinz', 'Johann', 'Konrad', 'Leopold', 'Magnus', 'Otto', 'Pieter', 'Rudiger', 'Siegfried', 'Ulrich', 'Waldenmar', 'Wolfgang']]
+    }
+
+    first_name_list = []
+    last_name_list = []
+
+    if gender == 'male':
+        first_name_list = dict_names[race][1]
+        last_name_list = dict_names[race][1]
+    if gender == 'female':
+        first_name_list = dict_names[race][0]
+        last_name_list = dict_names[race][0]
+
+    first_name_roll = randint(0, len(first_name_list) - 1)
+    last_name_roll = randint(0, len(last_name_list) - 1)
+
+    char_name = (first_name_list[first_name_roll] + ' ' + last_name_list[last_name_roll])
+    return char_name
 
 
+charname = get_names('dwarf', 'male')
+print(charname)
 # sc = personal_details.starting_career(race)
 '''
 h = personal_details.height(race)

@@ -12,7 +12,7 @@ def skills_talents(rce):
         skills = ['Common Knowledge (Elves)', 'Speak Language (Eltharin)', 'Speak Language (Reikspiel)']
         talents = ['Aethyric Arrunement or Specialist Weapon Group (Longbow)', 'Coolheaded or Savvy', 'Excellent Vision', 'Night Vision']
     elif rce.lower() == 'halfling':
-        skills = ['Academic Knowledge (Geneology/Heraldry)', 'Common Knowledge (Halflings)', 'Gossip', 'Speak Language (Halfling)', 'Speak Language (Reikspiel)', 'Trade (Cook or Farmer']
+        skills = ['Academic Knowledge (Geneology/Heraldry)', 'Common Knowledge (Halflings)', 'Gossip', 'Speak Language (Halfling)', 'Speak Language (Reikspiel)', 'Trade (Cook or Farmer)']
         talents = ['Night Vision', 'Resistance to Chaos', 'Specialist Weapon Group (Sling)']
         # Halflings get one random talent
         _halfling_random_talent = random_talent_list[randint(0, len(random_talent_list) - 1)]

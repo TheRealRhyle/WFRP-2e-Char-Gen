@@ -15,6 +15,7 @@ from personal_details import distinctive_marks
 from personal_details import number_siblings
 from personal_details import age
 from personal_details import birthplace
+from personal_details import get_names
 from itertools import zip_longest as zl
 
 race = ['dwarf', 'elf', 'halfling', 'human']
@@ -51,6 +52,8 @@ def build_random_char():
     sib = number_siblings(rand_race)
     _age = age(rand_race)
     sl = birthplace(rand_race)
+    character_name = get_names(rand_race, rand_gender)
+
     # print('Creating a random character, please wait', end="")
     # slowprint('...')
 
@@ -61,7 +64,8 @@ def build_random_char():
     ski, tal = skills.skills_talents(rand_race)
 
     # Output everything to check
-    print(rand_race + ' ' + rand_gender + '\n')
+    print('Name: ' + character_name)
+    print(rand_race.title() + ' ' + rand_gender.title() + '\n')
     print('Height: ' + h + '\tHair Color: ' + hc)
     print('Weight: ' + str(w) + '\t\tEye Color: ' + ec)
     print('Distictive Marks / Features: ' + dm)
@@ -77,34 +81,8 @@ def build_random_char():
         print('{:40s} {:40s}'.format(skill, talent))
 
 
-'''
-    for skill in range(0, int(len(ski))):
-        print(ski[skill], end='   ')
-    print('Talents:')
-    for talent in range(0, int(len(tal))):
-        print(tal[talent], end='   ')
-
-    print('\n\n')
-    print('Press any key to end.')
-    input()
-'''
-
-build_random_char()
-
-
-'''
-itr = 10
-
-while itr > 0:
-    for lrace in range(0, len(race)):
-        mp, sp, sf = races.profiles(str(race[lrace]))
-        if len(race[lrace]) > 6:
-            print(str(race[lrace]).title() + ':\t' + str(mp))
-            print(str(race[lrace]).title() + ':\t' + str(sp))
-        else:
-            print(str(race[lrace]).title() + ':\t\t' + str(mp))
-            print(str(race[lrace]).title() + ':\t\t' + str(sp))
-
-    print('-' * 10)
-    itr -= 1
-'''
+itr = 0
+while itr < 45:
+    build_random_char()
+    itr += 1
+    print('-' * 50)
