@@ -5,11 +5,16 @@ import time
 import sys
 import races
 import skills
+
+# combine the
 from personal_details import height
 from personal_details import weight
 from personal_details import hair_color
 from personal_details import eye_color
 from personal_details import distinctive_marks
+from personal_details import number_siblings
+from personal_details import age
+from personal_details import birthplace
 from itertools import zip_longest as zl
 
 race = ['dwarf', 'elf', 'halfling', 'human']
@@ -43,6 +48,9 @@ def build_random_char():
     hc = hair_color(rand_race)
     ec = eye_color(rand_race)
     dm = distinctive_marks()
+    sib = number_siblings(rand_race)
+    _age = age(rand_race)
+    sl = birthplace(rand_race)
     # print('Creating a random character, please wait', end="")
     # slowprint('...')
 
@@ -57,6 +65,8 @@ def build_random_char():
     print('Height: ' + h + '\tHair Color: ' + hc)
     print('Weight: ' + str(w) + '\t\tEye Color: ' + ec)
     print('Distictive Marks / Features: ' + dm)
+    print('Number of siblings: ' + str(sib) + '\tAge: ' + str(_age))
+    print('Birthplace: ' + sl)
     print(mp)
     print(str(sp) + '\n')
     print('{:40s} {:40s}'.format('Skills:', 'Talents:'))

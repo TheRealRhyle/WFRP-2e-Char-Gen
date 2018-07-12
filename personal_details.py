@@ -81,6 +81,59 @@ def distinctive_marks():
     return dm
 
 
+def number_siblings(race):
+    sibling_roll = randint(0, 5)
+    dict_siblings = {
+        'dwarf': [0, 0, 1, 1, 2, 3],
+        'elf': [0, 1, 1, 2, 2, 3],
+        'halfling': [1, 2, 3, 4, 5, 6],
+        'human': [0, 1, 2, 3, 4, 5]
+    }
+    sib = dict_siblings[race][sibling_roll]
+    return sib
+
+
+def age(race):
+    age_roll = randint(0, 19)
+    base_age_dh = 20
+    base_age_e = 30
+    base_age_hu = 16
+    dict_age = {
+        'dwarf': [(base_age_dh + i) for i in range(0, 100) if i % 5 == 0],
+        'elf': [(base_age_e + i) for i in range(0, 100) if i % 5 == 0],
+        'halfling': [(base_age_dh + i) for i in range(0, 41) if i % 2 == 0],
+        'human': [(base_age_hu + i) for i in range(0, 20)]
+
+        # weight_list = [(race_base_weight + i) for i in range(1, 100) if i % 5 == 0]
+    }
+    age_list = dict_age[race]
+    _age = age_list[age_roll]
+    return _age
+
+
+def birthplace(race):
+    dict_sl = {
+        'human': [['Averland', 'Hochland', 'Middenland', 'Nordland', 'Ostermark', 'Ostland', 'Reikland', 'Stirland', 'Talabecland', 'Wissenland'], ['City', 'Prosperous Town', 'Market Town', 'Fortified Town', 'Farming Village', 'Poor Village', 'Small Settlement', 'Pig/Cattle Farm', 'Arable Farm', 'Hovel']],
+        'dwarf': ['Roll on Human', 'Karak Norn (Grey Mountains)', 'Karak Izor (the Vaults)', 'Karak Hirn (Black Mountains)', 'Karak Kadrin (World\'s Edge Mountians)', 'Karaz-a-Karak (World\'s Edge Mountians)', 'Zhufbar (World\'s Edge Mountians)', 'Barak Varr (the Black Gulf)'],
+        'elf': ['City of Altdorf', 'City of Marienburg', 'Laurelorn Forest', 'The Great Forest', 'Reikwald Forest'],
+        'halfling': ['The Moot', 'Roll on Human']
+    }
+
+    hl_roll = randint(0, len(dict_sl[race]) - 1)
+
+    if race == 'human' or dict_sl[race][hl_roll] == 'Roll on Human':
+        region = randint(0, len(dict_sl['human'][0]) - 1)
+        pop = randint(0, len(dict_sl['human'][1]) - 1)
+        sl = str('A ' + str(dict_sl['human'][1][pop]) + ' in the province of ' + str(dict_sl['human'][0][region]))
+    else:
+        # print(hl_roll)
+        sl = dict_sl[race][hl_roll]
+    # print('len(dict_sl[race]): \t' + str(len(dict_sl[race]) - 1))
+    return sl
+
+# birthplace('halfling')
+
+
 # sc = personal_details.starting_career(race)
 '''
 h = personal_details.height(race)
