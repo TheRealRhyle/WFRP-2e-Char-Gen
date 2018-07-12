@@ -5,17 +5,8 @@ import time
 import sys
 import races
 import skills
-
-# combine the
-from personal_details import height
-from personal_details import weight
-from personal_details import hair_color
-from personal_details import eye_color
-from personal_details import distinctive_marks
-from personal_details import number_siblings
-from personal_details import age
-from personal_details import birthplace
-from personal_details import get_names
+import personal_details as pd
+import careers
 from itertools import zip_longest as zl
 
 race = ['dwarf', 'elf', 'halfling', 'human']
@@ -42,17 +33,19 @@ def slowprint(string):
 def build_random_char():
     # random_char = str(input("Random character: [Y/n] ") or "Y")
     # if random_char == 'Y':
+
     rand_race = race[random.randint(0, 3)]
     rand_gender = gender[random.randint(0, 1)]
-    h = height(rand_race, rand_gender)
-    w = weight(rand_race)
-    hc = hair_color(rand_race)
-    ec = eye_color(rand_race)
-    dm = distinctive_marks()
-    sib = number_siblings(rand_race)
-    _age = age(rand_race)
-    sl = birthplace(rand_race)
-    character_name = get_names(rand_race, rand_gender)
+    h = pd.height(rand_race, rand_gender)
+    w = pd.weight(rand_race)
+    hc = pd.hair_color(rand_race)
+    ec = pd.eye_color(rand_race)
+    dm = pd.distinctive_marks()
+    sib = pd.number_siblings(rand_race)
+    _age = pd.age(rand_race)
+    sl = pd.birthplace(rand_race)
+    character_name = pd.get_names(rand_race, rand_gender)
+    sc = careers.starting_career(rand_race)
 
     # print('Creating a random character, please wait', end="")
     # slowprint('...')
@@ -65,7 +58,7 @@ def build_random_char():
 
     # Output everything to check
     print('Name: ' + character_name)
-    print(rand_race.title() + ' ' + rand_gender.title() + '\n')
+    print(rand_race.title() + ' ' + rand_gender.title() + ' the ' + sc)
     print('Height: ' + h + '\tHair Color: ' + hc)
     print('Weight: ' + str(w) + '\t\tEye Color: ' + ec)
     print('Distictive Marks / Features: ' + dm)
@@ -81,8 +74,4 @@ def build_random_char():
         print('{:40s} {:40s}'.format(skill, talent))
 
 
-itr = 0
-while itr < 45:
-    build_random_char()
-    itr += 1
-    print('-' * 50)
+build_random_char()

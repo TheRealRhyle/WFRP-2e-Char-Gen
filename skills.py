@@ -10,7 +10,7 @@ def skills_talents(rce):
         talents = ['Dwarfcraft', 'Grudge-born Fury', 'Night Vision', 'Resistance to Magic', 'Stout-hearted', 'Sturdy']
     elif rce.lower() == 'elf':
         skills = ['Common Knowledge (Elves)', 'Speak Language (Eltharin)', 'Speak Language (Reikspiel)']
-        talents = ['Aethyric Arrunement or Specialist Weapon Group (Longbow)', 'Coolheaded or Savvy', 'Excellent Vision', 'Night Vision']
+        talents = ['Aethyric Attunement or Specialist Weapon Group (Longbow)', 'Coolheaded or Savvy', 'Excellent Vision', 'Night Vision']
     elif rce.lower() == 'halfling':
         skills = ['Academic Knowledge (Geneology/Heraldry)', 'Common Knowledge (Halflings)', 'Gossip', 'Speak Language (Halfling)', 'Speak Language (Reikspiel)', 'Trade (Cook or Farmer)']
         talents = ['Night Vision', 'Resistance to Chaos', 'Specialist Weapon Group (Sling)']

@@ -123,7 +123,10 @@ def birthplace(race):
     if race == 'human' or dict_sl[race][hl_roll] == 'Roll on Human':
         region = randint(0, len(dict_sl['human'][0]) - 1)
         pop = randint(0, len(dict_sl['human'][1]) - 1)
-        sl = str('A ' + str(dict_sl['human'][1][pop]) + ' in the province of ' + str(dict_sl['human'][0][region]))
+        if str(dict_sl['human'][1][pop])[0] == 'A':
+            sl = str('An ' + str(dict_sl['human'][1][pop]) + ' in the province of ' + str(dict_sl['human'][0][region]))
+        else:
+            sl = str('A ' + str(dict_sl['human'][1][pop]) + ' in the province of ' + str(dict_sl['human'][0][region]))
     else:
         sl = dict_sl[race][hl_roll]
 
@@ -153,20 +156,3 @@ def get_names(race, gender):
 
     char_name = (first_name_list[first_name_roll] + ' ' + last_name_list[last_name_roll])
     return char_name
-
-
-charname = get_names('dwarf', 'male')
-print(charname)
-# sc = personal_details.starting_career(race)
-'''
-h = personal_details.height(race)
-w = personal_details.weight(race)
-
-ec = personal_details.eye_color(race)
-dm = personal_details.distinguishing_marks(race)
-sib = personal_details.siblings(race)
-ss = personal_details.star_sign(race)
-age = personal_details.age(race)
-bp = personal_details.birthplace(race)
-nam = personal_details.names(race)
-'''
