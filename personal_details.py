@@ -66,8 +66,6 @@ def eye_color(race):
         eye_color = ['Blue', 'Hazel', 'Hazel', 'Light Brown', 'Light Brown', 'Brown', 'Brown', 'Dark Brown', 'Dark Brown', 'Dark Brown']
     elif race == 'human':
         eye_color = ['Pale Grey', 'Grey-blue', 'Blue', 'Green', 'Copper', 'Light Brown', 'Brown', 'Dark Brown', 'Purple', 'Black']
-    else:
-        eye_color = ['Bald', 'Bald', 'Bald', 'Bald', 'Bald', 'Bald', 'Bald', 'Bald', 'Bald', 'Bald']
 
     ec = eye_color[rand_ec - 1]
     return ec
@@ -149,10 +147,19 @@ def get_names(race, gender):
         last_name_list = dict_names[race][1]
     if gender == 'female':
         first_name_list = dict_names[race][0]
-        last_name_list = dict_names[race][0]
+        last_name_list = dict_names[race][1]
 
     first_name_roll = randint(0, len(first_name_list) - 1)
     last_name_roll = randint(0, len(last_name_list) - 1)
 
     char_name = (first_name_list[first_name_roll] + ' ' + last_name_list[last_name_roll])
     return char_name
+
+
+def star_sign():
+    ssign = ['Wymund the Anchorite - Sign of Enduring','The Big Cross - Sign of Clarity','The Limner\'s line - Sign of Percision','Gnuthus the Ox - Sign of Dutiful Service','Dragonmas the Drake - Sign of Courage','The Gloaming - Sign of Illusion and Mastery','Grungi\'s Baldric - Sign of Martial Pursuits','Mammit the Wise - Sign of Wisdom','Mummit the Fool - Sign of Instinct','The Two Bullocks - Sign of Fertility and Craftsmanship','The Dancer - Sign of Love and Attraction','The Drummer - Sign of Excess and Hedonism','The Piper - Sign of the Trickster','Vobist the Faint - Sign of Darkness and Uncertainty','The Broken Cart - Sign of Pride','The Greased Goat - Sign of Denied Passions','Rhya\'s Cauldron - Sign of Mercy, Death and Creation','Cackelfax the Cockerel - Sign of Money and Merchants','The Bonesaw - Sign of Skill and Learning','The Witching Star - Sign of Magic']
+    random_ssign = randint(0, len(ssign)-1)
+
+    return ssign[random_ssign]
+
+#if __name__  = __main__():

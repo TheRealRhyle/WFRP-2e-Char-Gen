@@ -1,77 +1,121 @@
 # WFRP Character generator
 # Created as a personal project
 import random
-import time
-import sys
 import races
 import skills
 import personal_details as pd
 import careers
-from itertools import zip_longest as zl
+import pickle
 
 race = ['dwarf', 'elf', 'halfling', 'human']
 gender = ('male', 'female')
 
 
 class Character:
+    def __str__(self):
+        pass
+
     def __init__(self, first, last):
         self.first = first
         self.last = last
-        # self.skills = skills[]
-        # self.talents = talents[]
-
-
-def slowprint(string):
-    for letter in string:
-        sys.stdout.write(letter)
-        sys.stdout.flush()
-        time.sleep(1)
-
-    print(end='\n\n')
 
 
 def build_random_char():
-    # random_char = str(input("Random character: [Y/n] ") or "Y")
-    # if random_char == 'Y':
-
     rand_race = race[random.randint(0, 3)]
     rand_gender = gender[random.randint(0, 1)]
-    h = pd.height(rand_race, rand_gender)
-    w = pd.weight(rand_race)
-    hc = pd.hair_color(rand_race)
-    ec = pd.eye_color(rand_race)
-    dm = pd.distinctive_marks()
-    sib = pd.number_siblings(rand_race)
-    _age = pd.age(rand_race)
-    sl = pd.birthplace(rand_race)
-    character_name = pd.get_names(rand_race, rand_gender)
-    sc = careers.starting_career(rand_race)
-
-    # print('Creating a random character, please wait', end="")
-    # slowprint('...')
-
-    # Generate Main and Secondary Profiles
-    mp, sp = races.profiles(rand_race)
 
     # Get starting Skills and Talents based on rand_race
     ski, tal = skills.skills_talents(rand_race)
 
-    # Output everything to check
-    print('Name: ' + character_name)
-    print(rand_race.title() + ' ' + rand_gender.title() + ' the ' + sc)
-    print('Height: ' + h + '\tHair Color: ' + hc)
-    print('Weight: ' + str(w) + '\t\tEye Color: ' + ec)
-    print('Distictive Marks / Features: ' + dm)
-    print('Number of siblings: ' + str(sib) + '\tAge: ' + str(_age))
-    print('Birthplace: ' + sl)
-    print(mp)
-    print(str(sp) + '\n')
-    print('{:40s} {:40s}'.format('Skills:', 'Talents:'))
-
     ski = sorted(ski)
     tal = sorted(tal)
-    for skill, talent in zl(ski, tal, fillvalue=''):
-        print('{:40s} {:40s}'.format(skill, talent))
+
+    charout = {}
+    charout['name'] = pd.get_names(rand_race, rand_gender)
+    charout['career'] = careers.starting_career(rand_race)
+    charout['race'] = rand_race.title()
+    charout['gender'] = rand_gender.title()
+    charout['height'] = pd.height(rand_race, rand_gender)
+    charout['hair_color'] = pd.hair_color(rand_race)
+    charout['weight'] = pd.weight(rand_race)
+    charout['eye_color'] = pd.eye_color(rand_race)
+    charout['marks'] = pd.distinctive_marks()
+    charout['age'] = pd.age(rand_race)
+    charout['siblings'] = pd.number_siblings(rand_race)
+    charout['birthplace'] = pd.birthplace(rand_race)
+    charout['starsign'] = pd.star_sign()
+    charout['starting_stat_block'] = random_stat_blocks(rand_race)
+    charout['skills'] = sorted(ski)
+    charout['talents'] = sorted(tal)
+
+    return charout
 
 
-build_random_char()
+def random_stat_blocks(race):
+    # Generate Main and Secondary Profiles
+    mp, sp = races.profiles(race)
+
+    # Get starting Skills and Talents based on rand_race
+    ski, tal = skills.skills_talents(race)
+
+    mp_key, mp_value = '', ''
+    for key, value in mp.items():
+        mp_key = mp_key + key + '\t'
+
+    for key, value in mp.items():
+        mp_value = str(mp_value) + str(value) + '\t'
+
+    sp_key, sp_value = '', ''
+    for key, value in sp.items():
+        sp_key = sp_key + key + '\t'
+
+    for key, value in sp.items():
+        sp_value = str(sp_value) + str(value) + '\t'
+
+    main_prof = """\n    ========= Main Profile =========
+    {}
+    {}
+
+    ====== Secondary Profile =======
+    {}
+    {}
+    """.format(mp_key, mp_value, sp_key, sp_value)
+
+    profile = main_prof  # + '\n' + sec_prof
+
+    return profile
+
+
+# build_random_char()
+# print(random_stat_blocks('dwarf'))
+
+charout = build_random_char()
+
+# with open('{}.dat'.format(charout['name']), 'wb') as f:
+#    pickle.dump(charout, f)
+
+with open('Bardin Brokk.dat', 'rb') as f:
+    charin = pickle.load(f)
+
+charin['weight'] = str(charin['weight'])
+
+skills = charin['skills']
+charin['skills'] = '\n'.join(charin['skills'])
+charin['talents'] = '\n'.join(charin['talents'])
+
+sheet = """Name: {name} the {career}
+Race: {race:15s}Gender:{gender:15s}Age:{age}
+Height: {height:13s}Hair Color: {hair_color:10s}Siblings:{siblings}
+Weight: {weight:13s}Eye Color: {eye_color}
+Birthplace: {birthplace}
+Star Sign: {starsign}
+Distinguising Marks: {marks}
+{starting_stat_block}
+Skills:
+-------
+{skills:35}
+
+Talents:
+-------
+{talents}
+""".format(ws='', **charin)
