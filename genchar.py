@@ -93,6 +93,9 @@ def load_character(char):
     with open('characters\{}.dat'.format(char), 'rb') as f:
         charin = pickle.load(f)
 
+    return format_sheet(charin)
+
+def format_sheet(charin):
     charin['weight'] = str(charin['weight'])
 
     skills = charin['skills']
@@ -118,16 +121,19 @@ def load_character(char):
 
     return sheet
 
-def mainloop():
-    option = input('Would you like to [G]enerate a Random Chacracter or [L]oad a character?')
+def mainloop(option):
     if option.lower() == 'g':
         charout = build_random_char()
-        print(charout)
+        print(format_sheet(charout))
         ser = input('[S]ave,[E]xit,[R]eroll')
         if ser.lower() == 's':
             save_character(charout)
+            saved=('Character: {} has been saved to characters\{}.dat').format(charout['name'],charout['name'])
+            print(saved)
+            input('Press [ENTER] key to continue...')
+            mainloop('g')
         elif ser.lower() == 'r':
-            build_random_char()
+            mainloop('g')
         else:
             print('Have a nice day')
 
@@ -138,4 +144,5 @@ def mainloop():
         print('Not a valid selection, please try again.')
 
 if __name__=='__main__':
-    mainloop()
+    option = input('Would you like to [G]enerate a Random Character or [L]oad a character?')
+    mainloop(option)
