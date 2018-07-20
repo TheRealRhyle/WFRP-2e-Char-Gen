@@ -91,10 +91,10 @@ def random_stat_blocks(race):
 
 charout = build_random_char()
 
-# with open('{}.dat'.format(charout['name']), 'wb') as f:
+#with open('{}.dat'.format(charout['name']), 'wb') as f:
 #    pickle.dump(charout, f)
 
-with open('Bardin Brokk.dat', 'rb') as f:
+with open('Ravandil Dolwen.dat', 'rb') as f:
     charin = pickle.load(f)
 
 charin['weight'] = str(charin['weight'])
@@ -113,9 +113,11 @@ Distinguising Marks: {marks}
 {starting_stat_block}
 Skills:
 -------
-{skills:35}
+{skills}
 
 Talents:
 -------
 {talents}
-""".format(ws='', **charin)
+""".format(**charin)
+
+print(sheet)
