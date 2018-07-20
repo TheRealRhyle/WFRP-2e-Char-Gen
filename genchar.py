@@ -1,15 +1,15 @@
 # WFRP Character generator
 # Created as a personal project
+import pickle
 import random
+
+import careers
+import personal_details as pd
 import races
 import skills
-import personal_details as pd
-import careers
-import pickle
 
 race = ['dwarf', 'elf', 'halfling', 'human']
 gender = ('male', 'female')
-
 
 class Character:
     def __str__(self):
@@ -85,39 +85,57 @@ def random_stat_blocks(race):
 
     return profile
 
+def save_character(charout):
+    with open('characters\{}.dat'.format(charout['name']), 'wb') as f:
+        pickle.dump(charout, f)
 
-# build_random_char()
-# print(random_stat_blocks('dwarf'))
+def load_character(char):
+    with open('characters\{}.dat'.format(char), 'rb') as f:
+        charin = pickle.load(f)
 
-charout = build_random_char()
+    charin['weight'] = str(charin['weight'])
 
-#with open('{}.dat'.format(charout['name']), 'wb') as f:
-#    pickle.dump(charout, f)
+    skills = charin['skills']
+    charin['skills'] = '\n'.join(charin['skills'])
+    charin['talents'] = '\n'.join(charin['talents'])
 
-with open('Ravandil Dolwen.dat', 'rb') as f:
-    charin = pickle.load(f)
+    sheet = """Name: {name} the {career}
+    Race: {race:15s}Gender:{gender:15s}Age:{age}
+    Height: {height:13s}Hair Color: {hair_color:10s}Siblings:{siblings}
+    Weight: {weight:13s}Eye Color: {eye_color}
+    Birthplace: {birthplace}
+    Star Sign: {starsign}
+    Distinguising Marks: {marks}
+    {starting_stat_block}
+    Skills:
+    -------
+    {skills}
+    
+    Talents:
+    -------
+    {talents}
+    """.format(**charin).replace('    ','')
 
-charin['weight'] = str(charin['weight'])
+    return sheet
 
-skills = charin['skills']
-charin['skills'] = '\n'.join(charin['skills'])
-charin['talents'] = '\n'.join(charin['talents'])
+def mainloop():
+    option = input('Would you like to [G]enerate a Random Chacracter or [L]oad a character?')
+    if option.lower() == 'g':
+        charout = build_random_char()
+        print(charout)
+        ser = input('[S]ave,[E]xit,[R]eroll')
+        if ser.lower() == 's':
+            save_character(charout)
+        elif ser.lower() == 'r':
+            build_random_char()
+        else:
+            print('Have a nice day')
 
-sheet = """Name: {name} the {career}
-Race: {race:15s}Gender:{gender:15s}Age:{age}
-Height: {height:13s}Hair Color: {hair_color:10s}Siblings:{siblings}
-Weight: {weight:13s}Eye Color: {eye_color}
-Birthplace: {birthplace}
-Star Sign: {starsign}
-Distinguising Marks: {marks}
-{starting_stat_block}
-Skills:
--------
-{skills}
+    elif option.lower() == 'l':
+        char = input('Character name: ')
+        print(load_character(char))
+    else:
+        print('Not a valid selection, please try again.')
 
-Talents:
--------
-{talents}
-""".format(**charin)
-
-print(sheet)
+if __name__=='__main__':
+    mainloop()
