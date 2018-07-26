@@ -103,12 +103,12 @@ def format_sheet(charin):
     charin['talents'] = '\n'.join(charin['talents'])
 
     sheet = """Name: {name} the {career}
-    Race: {race:15s}Gender:{gender:15s}Age:{age}
-    Height: {height:13s}Hair Color: {hair_color:10s}Siblings:{siblings}
+    Race: {race:15s}Gender: {gender:15s}Age: {age}
+    Height: {height:13s}Hair Color: {hair_color:10s}Siblings: {siblings}
     Weight: {weight:13s}Eye Color: {eye_color}
     Birthplace: {birthplace}
     Star Sign: {starsign}
-    Distinguising Marks: {marks}
+    Distinguishing Marks: {marks}
     {starting_stat_block}
     Skills:
     -------
