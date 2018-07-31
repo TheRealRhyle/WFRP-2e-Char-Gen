@@ -1,7 +1,0 @@
-.git*
-.idea
-.iml
-__*
-__*/
-venv/
-gui*/*
