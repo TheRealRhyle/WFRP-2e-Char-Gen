@@ -56,7 +56,7 @@ def career_selection(career_name):
             'Career Entries': ['Estalian Diestro', 'Jailer', 'Mercenary', 'Thug'],
             'Career Exits': ['Bailiff', 'Bounty Hunter', 'Interrogator', 'Mercenary', 'Protagonist', 'Racketeer']},
         'Bone Picker Advance Scheme': {
-            'Statblock': [5, 0, 5, 10, 5, 0, 5, 5, 2, 0, 0, 0, 0, 0, 0],
+            'Statblock': [5, 0, 5, 10, 5, 0, 5, 5, 2, 0, 0, 0, 0, 0, 0, 0],
             'Skills': ['Animal Care', 'Charm or Gossip', 'Drive', 'Common Knowledge (the Empire)', 'Evaluate', 'Haggle',
                        'Search'],
             'Talents': ['Coolheaded or Streetwise', 'Hardy or Resistance to Disease'],
@@ -64,7 +64,7 @@ def career_selection(career_name):
             'Career Entries': ['Peasant', 'Rat Catcher', 'Vagabond'],
             'Career Exits': ['Camp Follower', 'Cat Burglar', 'Fence', 'Grave Robber', 'Smuggler']},
         'Bounty Hunter Advance Scheme': {
-            'Statblock': [5, 10, 5, 0, 10, 0, 5, 0, 2, 0, 0, 0, 0, 0, 0],
+            'Statblock': [5, 10, 5, 0, 10, 0, 5, 0, 2, 0, 0, 0, 0, 0, 0, 0],
             'Skills': ['Follow Trail', 'Intimidate', 'Outdoor Perception', 'Search', 'Shadowing', 'Silent Move'],
             'Talents': ['Marksman or Strike to Stun', 'Rover', 'Specialist Weapon Group (Entangling)',
                         'Sharpshooter or Strike Mighty Blow'],
@@ -73,7 +73,7 @@ def career_selection(career_name):
             'Career Entries': ['Bodyguard', 'Fieldwarden', 'Kislevite Kossar', 'Mercenary', 'Pit Fighter'],
             'Career Exits': ['Mercenary', 'Protagonist', 'Scout', 'Vampire Hunter']},
         'Burgher Advance Scheme': {
-            'Statblock': [5, 0, 0, 0, 5, 10, 5, 5, 2, 0, 0, 0, 0, 0, 0],
+            'Statblock': [5, 0, 0, 0, 5, 10, 5, 5, 2, 0, 0, 0, 0, 0, 0, 0],
             'Skills': ['Common Knowledge (the Empire) or Consume Alcohol', 'Drive', 'Evaluate', 'Gossip or Read/Write',
                        'Haggle', 'Perception', 'Search', 'Speak Language ( Kislevian', 'or Tilean)',
                        'Speak Language (Reikspiel)'],
@@ -82,7 +82,7 @@ def career_selection(career_name):
             'Career Entries': ['Innkeeper', 'Servant'],
             'Career Exits': ['Agitator', 'Fence', 'Innkeeper', 'Militiaman', 'Tradesman', 'Valet']},
         'Camp Follower Advance Scheme': {
-            'Statblock': [0, 0, 0, 5, 10, 5, 5, 10, 2, 0, 0, 0, 0, 0, 0],
+            'Statblock': [0, 0, 0, 5, 10, 5, 5, 10, 2, 0, 0, 0, 0, 0, 0, 0],
             'Skills': ['Animal Care or Drive', 'Charm or Gossip', 'Haggle', 'Perception', 'Search',
                        'Any one of: Trade (Armourer', 'Bowyer', 'Cartographer', 'Gunsmith', 'Herbalist', 'Merchant',
                        'Smith', 'Tailor', 'or Weaponsmith)', 'Speak Language (Breton', 'or Tilean)', 'Sleight of Hand'],
@@ -91,14 +91,14 @@ def career_selection(career_name):
             'Career Entries': ['Bone Picker', 'Servant'],
             'Career Exits': ['Charcoal-Burner', 'Charlatan', 'Smuggler', 'Spy', 'Tradesman', 'Vagabond']},
         'Charcoal-Burner Advance Scheme': {
-            'Statblock': [5, 0, 5, 5, 5, 5, 5, 5, 2, 0, 0, 0, 0, 0, 0],
+            'Statblock': [5, 0, 5, 5, 5, 5, 5, 5, 2, 0, 0, 0, 0, 0, 0, 0],
             'Skills': ['Common Knowledge (the Empire) or Drive or Gossip', 'Haggle', 'Outdoor Perception',
                        'Scale Sheer Surface', 'Search', 'Secret Signs (Ranger)'],
             'Trappings': ['3 Torches', 'Tinderbox', 'Hand Weapon (Hatchet)'],
             'Career Entries': ['Camp Follower', 'Hunter', 'Miner', 'Peasant'],
             'Career Exits': ['Hunter', 'Miner', 'Scout', 'Vagabond', 'Woodsman']},
         'Coachman Advance Scheme': {
-            'Statblock': [5, 10, 0, 0, 10, 0, 5, 5, 2, 0, 0, 0, 0, 0, 0],
+            'Statblock': [5, 10, 0, 0, 10, 0, 5, 5, 2, 0, 0, 0, 0, 0, 0, 0],
             'Skills': ['Animal Care', 'Drive', 'Gossip or Haggle', 'Heal or Navigation', 'Perception',
                        'Secret Signs (Ranger)', 'Speak Language (Breton', 'Kislevian', 'or Tilean)'],
             'Talents': ['Quick Draw or Seasoned Traveller', 'Specialist Weapon Group (Gunpowder)'],
@@ -107,7 +107,7 @@ def career_selection(career_name):
             'Career Entries': ['Outrider', 'Messenger'],
             'Career Exits': ['Ferryman', 'Highwayman', 'Outlaw', 'Scout', 'Smuggler', 'Toll Keeper']},
         'Entertainer Advance Scheme': {
-            'Statblock': [5, 10, 0, 0, 10, 0, 5, 10, 2, 0, 0, 0, 0, 0, 0],
+            'Statblock': [5, 10, 0, 0, 10, 0, 5, 10, 2, 0, 0, 0, 0, 0, 0, 0],
             'Skills': ['Animal Care or Swim', 'Charm', 'Common Knowledge (the Empire)', 'Evaluate or Gossip',
                        'Perception', 'Performer (any two)', 'Speak Language (Reikspiel)', 'Any one of:',
                        'Animal Training', 'Blather', 'Charm Animal', 'Hypnotism', 'Ride', 'Scale Sheer Surface',
@@ -120,7 +120,7 @@ def career_selection(career_name):
             'Career Entries': ['Herald', 'Rogue', 'Thief', 'Vagabond'],
             'Career Exits': ['Charlatan', 'Minstrel', 'Rogue', 'Thief', 'Vagabond']},
         'Envoy Advance Scheme': {
-            'Statblock': [5, 5, 0, 0, 5, 10, 5, 10, 2, 0, 0, 0, 0, 0, 0],
+            'Statblock': [5, 5, 0, 0, 5, 10, 5, 10, 2, 0, 0, 0, 0, 0, 0, 0],
             'Skills': ['Charm', 'Common Knowledge (the Empire or the Wasteland)', 'Evaluate', 'Gossip', 'Haggle',
                        'Read/Write', 'Secret Language (Guild Tongue)', 'Trade (Merchant)'],
             'Talents': ['Dealmaker or Seasoned Traveller'],
@@ -128,7 +128,7 @@ def career_selection(career_name):
             'Career Entries': ['Student', 'Tradesman'],
             'Career Exits': ['Charlatan', 'Merchant', 'Rogue', 'Seaman', 'Vagabond']},
         'Estalian Diestro Advance Scheme': {
-            'Statblock': [15, 0, 5, 5, 10, 5, 0, 0, 2, 0, 0, 0, 0, 0, 0],
+            'Statblock': [15, 0, 5, 5, 10, 5, 0, 0, 2, 0, 0, 0, 0, 0, 0, 0],
             'Skills': ['Academic Knowledge (Science)', 'Common Knowledge (Estalia)', 'Dodge Blow',
                        'Read/ Speak Language (Estalian)'],
             'Talents': ['Lightning Reflexes or Quick Draw or Strike to Injure', 'Specialist Weapon Group (Fencing)',
@@ -137,7 +137,7 @@ def career_selection(career_name):
             'Career Entries': ['None'],
             'Career Exits': ['Bodyguard', 'Duellist', 'Protagonist', 'Rogue']},
         'Ferryman Advance Scheme': {
-            'Statblock': [5, 5, 10, 5, 5, 5, 0, 0, 2, 0, 0, 0, 0, 0, 0],
+            'Statblock': [5, 5, 10, 5, 5, 5, 0, 0, 2, 0, 0, 0, 0, 0, 0, 0],
             'Skills': ['Charm', 'Common Knowledge (the Empire)', 'Evaluate or Secret Language (Ranger Tongue)',
                        'Gossip orIntimidate', 'Haggle', 'Perception', 'Row', 'Swim'],
             'Talents': ['Marksman or Suave', 'Specialist Weapon Group (Gunpowder) or Street Fighting'],
@@ -146,7 +146,7 @@ def career_selection(career_name):
             'Career Entries': ['Coachman', 'Smuggler', 'Toll Keeper'],
             'Career Exits': ['Boatman', 'Highwayman', 'Roadwarden', 'Smuggler']},
         'Fieldwarden Advance Scheme': {
-            'Statblock': [5, 10, 0, 5, 10, 0, 10, 0, 2, 0, 0, 0, 0, 0, 0],
+            'Statblock': [5, 10, 0, 5, 10, 0, 10, 0, 2, 0, 0, 0, 0, 0, 0, 0],
             'Skills': ['Academic Knowledge (Necromancy) or Common Knowledge (the Empire)', 'Concealment',
                        'Follow Outdoor Survival', 'Perception', 'Search', 'Silent Move'],
             'Talents': ['Fleet Footed or Savvy', 'Mighty Shot or Rapid Reload', 'Rover or Quick Draw'],
@@ -154,7 +154,7 @@ def career_selection(career_name):
             'Career Entries': ['Hunter', 'Militiaman', 'Toll Keeper'],
             'Career Exits': ['Bounty Hunter', 'Mercenary', 'Scout', 'Vampire Hunter']},
         'Fisherman Advance Scheme': {
-            'Statblock': [0, 5, 10, 5, 10, 5, 0, 0, 2, 0, 0, 0, 0, 0, 0],
+            'Statblock': [0, 5, 10, 5, 10, 5, 0, 0, 2, 0, 0, 0, 0, 0, 0, 0],
             'Skills': ['Common Knowledge (the Empire or the Wasteland)', 'Consume Alcohol or Haggle',
                        'Navigationor Trade (Merchant)', 'Outdoor Survival', 'Row', 'Sail',
                        'Speak Language (Reikspiel or Norse)', 'Swim'],
@@ -163,7 +163,7 @@ def career_selection(career_name):
             'Career Entries': ['Boatman', 'Peasant'],
             'Career Exits': ['Marine', 'Merchant', 'Navigator', 'Seaman']},
         'Grave Robber Advance Scheme': {
-            'Statblock': [5, 5, 5, 0, 10, 0, 10, 0, 2, 0, 0, 0, 0, 0, 0],
+            'Statblock': [5, 5, 5, 0, 10, 0, 10, 0, 2, 0, 0, 0, 0, 0, 0, 0],
             'Skills': ['Drive', 'Gossip or Haggle', 'Perception', 'Scale Sheer Surface', 'Search',
                        'Secret Signs (Thief)', 'Silent Move'],
             'Talents': ['Flee!', 'Resistance to Disease', 'Streetwise or Strongminded'],
@@ -171,7 +171,7 @@ def career_selection(career_name):
             'Career Entries': ['Barber-Surgeon', 'Bone Picker', 'Rat Catcher'],
             'Career Exits': ['Cat Burglar', 'Fence', 'Rat Catcher', 'Thief']},
         'Hedge Wizard Advance Scheme': {
-            'Statblock': [0, 0, 0, 5, 5, 5, 10, 10, 2, 0, 0, 0, 1, 0, 0],
+            'Statblock': [0, 0, 0, 5, 5, 5, 10, 10, 2, 0, 0, 0, 1, 0, 0, 0],
             'Skills': ['Animal Care or Haggle', 'Charm or Channelling', 'Charm Animal or Trade (Apothecary)',
                        'Heal or Hypnotism', 'Magical Sense', 'Perception', 'Search'],
             'Talents': ['Hedge Magic', 'Petty Magic (Hedge)'],
@@ -179,7 +179,7 @@ def career_selection(career_name):
             'Career Entries': ['None'],
             'Career Exits': ['Apprentice Wizard', 'Charlatan', 'Outlaw', 'Vagabond']},
         'Hunter Advance Scheme': {
-            'Statblock': [0, 15, 0, 5, 10, 5, 0, 0, 3, 0, 0, 0, 0, 0, 0],
+            'Statblock': [0, 15, 0, 5, 10, 5, 0, 0, 3, 0, 0, 0, 0, 0, 0, 0],
             'Skills': ['Concealment', 'Follow Trail', 'Outdoor Perception', 'Search or Swim', 'Secret Signs (Ranger)',
                        'Silent Move or Set Trap'],
             'Talents': ['Hardy or Specialist Weapon Group (Longbow)', 'Lightning Reflexes or Very Resilient',
@@ -189,7 +189,7 @@ def career_selection(career_name):
             'Career Exits': ['Bounty Hunter', 'Charcoal- Fieldwarden', 'Kithband Warrior', 'Miner', 'Soldier',
                              'Targeteer']},
         'Initiate Advance Scheme': {
-            'Statblock': [5, 5, 0, 5, 0, 10, 10, 10, 2, 0, 0, 0, 0, 0, 0],
+            'Statblock': [5, 5, 0, 5, 0, 10, 10, 10, 2, 0, 0, 0, 0, 0, 0, 0],
             'Skills': ['Academic Knowledge (Astronomy or History)', 'Academic Knowledge (Theology)', 'Charm', 'Heal',
                        'Perception', 'Read/Write', 'Speak Language (Classical)', 'Speak Language(Reikspiel)'],
             'Talents': ['Lightning Reflexes or Very Strong', 'Public Speaking', 'Suave or Warrior Born'],
@@ -197,7 +197,7 @@ def career_selection(career_name):
             'Career Entries': ['Hedge Wizard', 'Knight', 'Scribe', 'Vampire Hunter', 'Witch Hunter', 'Zealot'],
             'Career Exits': ['Barber-Surgeon', 'Demagogue', 'Friar', 'Priest', 'Zealot']},
         'Jailer Advance Scheme': {
-            'Statblock': [10, 0, 10, 10, 0, 0, 5, 0, 3, 0, 0, 0, 0, 0, 0],
+            'Statblock': [10, 0, 10, 10, 0, 0, 5, 0, 3, 0, 0, 0, 0, 0, 0, 0],
             'Skills': ['Command', 'Consume Alcohol', 'Dodge Blow', 'Heal or Sleight of Hand', 'Intimidate',
                        'Perception', 'Search'],
             'Talents': ['Resistance to Disease', 'Resistance to Specialist Weapon Group (Entangling)', 'Wrestling'],
@@ -205,7 +205,7 @@ def career_selection(career_name):
             'Career Entries': ['Bodyguard', 'Rat Catcher'],
             'Career Exits': ['Bailiff', 'Bodyguard', 'Interrogator', 'Rat Watchman Kislevite']},
         'Kossar Advance Scheme': {
-            'Statblock': [10, 10, 0, 10, 0, 0, 10, 0, 2, 0, 0, 0, 0, 0, 0],
+            'Statblock': [10, 10, 0, 10, 0, 0, 10, 0, 2, 0, 0, 0, 0, 0, 0, 0],
             'Skills': ['Common Knowledge (Kislev)', 'Consume Dodge Blow', 'Gamble or Gossip', 'Outdoor Perception',
                        'Search', 'Speak Language (Kislevian)'],
             'Talents': ['Specialist Weapon Group (Two-handed)', 'Strike to Injure'],
@@ -214,7 +214,7 @@ def career_selection(career_name):
             'Career Entries': ['None'],
             'Career Exits': ['Bounty Hunter', 'Mercenary', 'Shieldbreaker', 'Veteran']},
         'Kithband Warrior Advance Scheme': {
-            'Statblock': [5, 5, 0, 0, 10, 10, 5, 0, 2, 0, 0, 0, 0, 0, 0],
+            'Statblock': [5, 5, 0, 0, 10, 10, 5, 0, 2, 0, 0, 0, 0, 0, 0, 0],
             'Skills': ['Concealment', 'Dodge Blow', 'Follow Trail', 'Heal or Search', 'Outdoor Survival', 'Perception',
                        'Scale SheerSurface', 'Silent Move'],
             'Talents': ['Marksman or Rover', 'Rapid Reload or Warrior Born'],
@@ -222,7 +222,7 @@ def career_selection(career_name):
             'Career Entries': ['Hunter', 'Messenger'],
             'Career Exits': ['Hunter', 'Outrider', 'Vagabond', 'Veteran']},
         'Marine Advance Scheme': {
-            'Statblock': [10, 10, 10, 0, 5, 0, 5, 0, 3, 0, 0, 0, 0, 0, 0],
+            'Statblock': [10, 10, 10, 0, 5, 0, 5, 0, 3, 0, 0, 0, 0, 0, 0, 0],
             'Skills': ['Common Knowledge (the Wasteland) or Consume Alcohol', 'Dodge Blow',
                        'Gossip or Secret Language (Battle Tongue)', 'Intimidate', 'Row', 'Swim'],
             'Talents': ['Disarm or Quick Draw', 'Strike Mighty Strike to Stun'],
@@ -231,7 +231,7 @@ def career_selection(career_name):
             'Career Entries': ['Boatman', 'Fisherman', 'Seaman'],
             'Career Exits': ['Mate', 'Outlaw', 'Sergeant', 'Smuggler', 'Thug']},
         'Mercenary Advance Scheme': {
-            'Statblock': [10, 10, 5, 5, 5, 0, 5, 0, 2, 0, 0, 0, 0, 0, 0],
+            'Statblock': [10, 10, 5, 5, 5, 0, 5, 0, 2, 0, 0, 0, 0, 0, 0, 0],
             'Skills': ['Animal Care or Gamble', 'Common Knowledge ( Kislev', 'or Tilea)', 'Dodge Blow', 'Drive or Ride',
                        'Gossip or Haggle', 'Perception or Search', 'Secret Language (BattleTongue)',
                        'Speak Language (Tilean) or Swim'],
@@ -242,7 +242,7 @@ def career_selection(career_name):
                                'Norse Berserker', 'Outrider', 'Pit Fighter', 'Soldier', 'Watchman'],
             'Career Exits': ['Bodyguard', 'Bounty Hunter', 'Outlaw', 'Shieldbreaker', 'Veteran']},
         'Messenger Advance Scheme': {
-            'Statblock': [5, 5, 0, 5, 10, 5, 5, 0, 2, 0, 0, 0, 0, 0, 0],
+            'Statblock': [5, 5, 0, 5, 10, 5, 5, 0, 2, 0, 0, 0, 0, 0, 0, 0],
             'Skills': ['Animal Care', 'Common Knowledge (the Empire or the Wasteland) or Gossip', 'Navigation',
                        'Outdoor Survival', 'Secret Signs (Scout)', 'Perception', 'Speak Language (Reikspiel)', 'Swim'],
             'Talents': ['Orientation', 'Seasoned Traveller'],
@@ -251,7 +251,7 @@ def career_selection(career_name):
             'Career Entries': ['Militiaman', 'Roadwarden', 'Servant'],
             'Career Exits': ['Coachman', 'Herald', 'Kithband Warrior', 'Outrider', 'Roadwarden', 'Scout', 'Soldier']},
         'Militiaman Advance Scheme': {
-            'Statblock': [10, 5, 5, 5, 10, 0, 0, 0, 2, 0, 0, 0, 0, 0, 0],
+            'Statblock': [10, 5, 5, 5, 10, 0, 0, 0, 2, 0, 0, 0, 0, 0, 0, 0],
             'Skills': ['Animal Care', 'Dodge Blow', 'Drive or Swim', 'Gamble or Gossip', 'Outdoor Survival',
                        'Perception', 'Search', 'Trade(any one)'],
             'Talents': ['Specialist Weapon Group (Two-handed) or Rapid Reload', 'Strike Mighty Blow'],
@@ -260,7 +260,7 @@ def career_selection(career_name):
                           'Uniform'],
             'Career Exits': ['Artisan', 'Fieldwarden', 'Mercenary', 'Outlaw', 'Sergeant', 'Thief']},
         'Miner Advance Scheme': {
-            'Statblock': [5, 5, 10, 5, 0, 5, 5, 0, 2, 0, 0, 0, 0, 0, 0],
+            'Statblock': [5, 5, 10, 5, 0, 5, 5, 0, 2, 0, 0, 0, 0, 0, 0, 0],
             'Skills': ['Animal Care', 'Concealment or Evaluate or Outdoor Survival', 'Perception',
                        'Scale Sheer Surface', 'Trade (Miner or Prospector)'],
             'Talents': ['Orientation', 'Specialist Weapon Group (Two-handed)', 'Very Resilient or Warrior Born'],
@@ -269,7 +269,7 @@ def career_selection(career_name):
             'Career Entries': ['Charcoal-Burner', 'Hunter'],
             'Career Exits': ['Charcoal-Burner', 'Engineer', 'Mercenary', 'Shieldbreaker', 'Smuggler']},
         'Noble Advance Scheme': {
-            'Statblock': [10, 5, 0, 0, 5, 5, 5, 10, 2, 0, 0, 0, 0, 0, 0],
+            'Statblock': [10, 5, 0, 0, 5, 5, 5, 10, 2, 0, 0, 0, 0, 0, 0, 0],
             'Skills': ['Blather or Command', 'Common Knowledge (the Empire)', 'Consume Alcohol or Performer (Musician)',
                        'Charm', 'Gamble or Gossip', 'Read/Write', 'Ride', 'SpeakLanguage (Reikspiel)'],
             'Talents': ['Etiquette', 'Luck or Public Speaking', 'Savvy or Specialist Weapon (Fencing)',
@@ -279,7 +279,7 @@ def career_selection(career_name):
             'Career Entries': ['Squire', 'Steward'],
             'Career Exits': ['Courtier', 'Pistolier', 'Politician', 'Rogue', 'Student']},
         'Norse Berserker Advance Scheme': {
-            'Statblock': [15, 0, 10, 10, 0, 0, 10, 0, 2, 0, 0, 0, 0, 0, 0],
+            'Statblock': [15, 0, 10, 10, 0, 0, 10, 0, 2, 0, 0, 0, 0, 0, 0, 0],
             'Skills': ['Common Knowledge (Norsca)', 'Consume Intimidate', 'Performer (Storyteller)',
                        'Speak Language (Norse)', 'Swim'],
             'Talents': ['Frenzy', 'Menacing', 'Quick Draw', 'Specialist Weapon Group (Two-handed)'],
@@ -287,7 +287,7 @@ def career_selection(career_name):
             'Career Entries': ['None'],
             'Career Exits': ['Mercenary', 'Pit Fighter', 'Seaman', 'Veteran']},
         'Outlaw Advance Scheme': {
-            'Statblock': [10, 10, 0, 0, 10, 5, 0, 0, 2, 0, 0, 0, 0, 0, 0],
+            'Statblock': [10, 10, 0, 0, 10, 5, 0, 0, 2, 0, 0, 0, 0, 0, 0, 0],
             'Skills': ['Animal Care or Common Knowledge (the Empire)', 'Concealment', 'Dodge Blow', 'Drive or Ride',
                        'Gossip or Secret Signs (Thief)', 'Perception', 'Scale Sheer Set Trap or Swim', 'Silent Move'],
             'Talents': ['Rover or Streetwise', 'Sharpshooter or Strike to Stun'],
@@ -296,7 +296,7 @@ def career_selection(career_name):
                                'Peasant', 'Roadwarden', 'Rogue', 'Squire', 'Toll Woodsman', 'Zealot'],
             'Career Exits': ['Demagogue', 'Highwayman', 'Thief', 'Veteran']},
         'Outrider Advance Scheme': {
-            'Statblock': [5, 10, 0, 0, 10, 10, 5, 0, 2, 0, 0, 0, 0, 0, 0],
+            'Statblock': [5, 10, 0, 0, 10, 10, 5, 0, 2, 0, 0, 0, 0, 0, 0, 0],
             'Skills': ['Animal Care', 'Follow Trail', 'Outdoor Survival', 'Perception', 'Ride', 'Search',
                        'Silent Move'],
             'Talents': ['Coolheaded or Very Orientation', 'Specialist Weapon Group (Entangling)'],
@@ -306,7 +306,7 @@ def career_selection(career_name):
             'Career Entries': ['Kithband Warrior', 'Roadwarden', 'Soldier'],
             'Career Exits': ['Coachman', 'Highwayman', 'Roadwarden', 'Scout']},
         'Peasant Advance Scheme': {
-            'Statblock': [5, 5, 5, 10, 5, 0, 5, 0, 2, 0, 0, 0, 0, 0, 0],
+            'Statblock': [5, 5, 5, 10, 5, 0, 5, 0, 2, 0, 0, 0, 0, 0, 0, 0],
             'Skills': ['Animal Care or Charm', 'Animal Training or Charm Animal or Trade (Cook)', 'Concealment',
                        'Drive or Trade (Bowyer)', 'Gamble or Performer (Dancer orSinger)',
                        'Outdoor Survival or Trade (Farmer)', 'Row orSet Trap', 'Scale Sheer Surface or Silent Move'],
@@ -316,7 +316,7 @@ def career_selection(career_name):
             'Career Exits': ['Bone Picker', 'Charcoal-Burner', 'Militiaman', 'Outlaw', 'Politician', 'Servant',
                              'Zealot']},
         'Pit Fighter Advance Scheme': {
-            'Statblock': [15, 0, 0, 10, 10, 0, 10, 0, 2, 0, 0, 0, 0, 0, 0],
+            'Statblock': [15, 0, 0, 10, 10, 0, 10, 0, 2, 0, 0, 0, 0, 0, 0, 0],
             'Skills': ['Dodge Blow', 'Intimidate'],
             'Talents': ['Disarm or Wrestling', 'Quick Draw or Strike to Injure', 'Specialist Weapon Group (Flail)',
                         'SpecialistWeapon Group (Parrying)', 'Specialist Weapon Group(Two-handed)',
@@ -326,7 +326,7 @@ def career_selection(career_name):
             'Career Entries': ['Norse Berserker', 'Protagonist', 'Thug'],
             'Career Exits': ['Bounty Hunter', 'Mercenary', 'Protagonist', 'Troll Slayer', 'Veteran']},
         'Protagonist Advance Scheme': {
-            'Statblock': [10, 0, 10, 0, 10, 0, 10, 0, 2, 0, 0, 0, 0, 0, 0],
+            'Statblock': [10, 0, 10, 0, 10, 0, 10, 0, 2, 0, 0, 0, 0, 0, 0, 0],
             'Skills': ['Dodge Blow', 'Gossip or Haggle', 'Intimidate', 'Ride'],
             'Talents': ['Disarm or Quick Draw', 'Menacing or Suave', 'Street Fighting', 'Strike Mighty Blow',
                         'Strike to Injure', 'Strike to Stun'],
@@ -335,7 +335,7 @@ def career_selection(career_name):
             'Career Entries': ['Bailiff', 'Bodyguard', 'Bounty Hunter', 'Estalian Diestro', 'Pit Fighter'],
             'Career Exits': ['Duellist', 'Pit Fighter', 'Racketeer', 'Thief', 'Thug']},
         'Rat Catcher Advance Scheme': {
-            'Statblock': [5, 10, 0, 5, 10, 0, 10, 0, 2, 0, 0, 0, 0, 0, 0],
+            'Statblock': [5, 10, 0, 5, 10, 0, 10, 0, 2, 0, 0, 0, 0, 0, 0, 0],
             'Skills': ['Animal Care', 'Animal Trainer', 'Perception', 'Search', 'Set Trap', 'Silent Move'],
             'Talents': ['Resistance to Disease', 'Resistance to Specialist Weapon Group (Sling)', 'Tunnel Rat'],
             'Trappings': ['Sling with Ammunition', '4 Animal Traps', 'Pole with 1d10 dead rats',
@@ -343,7 +343,7 @@ def career_selection(career_name):
             'Career Entries': ['Grave Robber', 'Jailer', 'Runebearer', 'Tomb Robber'],
             'Career Exits': ['Bone Picker', 'Cat Burglar', 'Grave Jailer', 'Shieldbreaker', 'Thief']},
         'Roadwarden Advance Scheme': {
-            'Statblock': [10, 10, 5, 0, 10, 5, 5, 0, 2, 0, 0, 0, 0, 0, 0],
+            'Statblock': [10, 10, 5, 0, 10, 5, 5, 0, 2, 0, 0, 0, 0, 0, 0, 0],
             'Skills': ['Animal Care', 'Common Knowledge (the Empire) or Gossip', 'Drive',
                        'Follow Trail or Secret Signs (Scout)', 'Navigation', 'Outdoor Survival', 'Perception', 'Ride',
                        'Search'],
@@ -353,7 +353,7 @@ def career_selection(career_name):
             'Career Entries': ['Coachman', 'Ferryman', 'Outrider', 'Watchman'],
             'Career Exits': ['Highwayman', 'Messenger', 'Outlaw', 'Scout', 'Sergeant', 'Toll Keeper']},
         'Rogue Advance Scheme': {
-            'Statblock': [5, 5, 0, 0, 10, 5, 5, 10, 2, 0, 0, 0, 0, 0, 0],
+            'Statblock': [5, 5, 0, 0, 10, 5, 5, 10, 2, 0, 0, 0, 0, 0, 0, 0],
             'Skills': ['Blather', 'Charm', 'Evaluate', 'Gamble or Secret Signs (Thief)', 'Gossip or Haggle',
                        'Perception', 'Performer(Actor or Storyteller)', 'Search or Secret Language(Thieves’ Tongue)',
                        'Speak Language (Reikspiel)'],
@@ -363,14 +363,14 @@ def career_selection(career_name):
                                'Thief', 'Valet'],
             'Career Exits': ['Charlatan', 'Demagogue', 'Entertainer', 'Servant', 'Thief']},
         'Runebearer Advance Scheme': {
-            'Statblock': [10, 0, 5, 5, 10, 5, 5, 0, 2, 0, 0, 1, 0, 0, 0],
+            'Statblock': [10, 0, 5, 5, 10, 5, 5, 0, 2, 0, 0, 1, 0, 0, 0, 0],
             'Skills': ['Dodge Blow', 'Navigation', 'Outdoor Survival', 'Secret Signs (Scout)', 'Perception', 'Swim'],
             'Talents': ['Flee!', 'Fleet Footed or Sixth Sense', 'Rapid Reload', 'Very Resilient or Very Strong'],
             'Trappings': ['Crossbow and 10 Bolts', 'Light Armour (Leather Jerkin)', 'Healing Draught', 'Lucky Charm'],
             'Career Entries': ['Shieldbreaker'],
             'Career Exits': ['Rat Catcher', 'Scout', 'Shieldbreaker', 'Tomb Robber', 'Veteran']},
         'Scribe Advance Scheme': {
-            'Statblock': [0, 0, 0, 0, 10, 10, 10, 5, 2, 0, 0, 0, 0, 0, 0],
+            'Statblock': [0, 0, 0, 0, 10, 10, 10, 5, 2, 0, 0, 0, 0, 0, 0, 0],
             'Skills': ['Academic Knowledge (any one)', 'Common Knowledge (the Empire) or Gossip', 'Perception',
                        'Read/ Secret Language (Guild Tongue)', 'Speak Language(Breton)', 'Speak Language (Classical)',
                        'Speak Language(Reikspiel or Tilean)', 'Trade (Calligrapher)'],
@@ -379,7 +379,7 @@ def career_selection(career_name):
             'Career Entries': ['Apprentice Wizard', 'Initiate'],
             'Career Exits': ['Agitator', 'Apprentice Wizard', 'Navigator', 'Scholar']},
         'Seaman Advance Scheme': {
-            'Statblock': [10, 5, 10, 0, 10, 0, 0, 0, 2, 0, 0, 0, 0, 0, 0],
+            'Statblock': [10, 5, 10, 0, 10, 0, 0, 0, 2, 0, 0, 0, 0, 0, 0, 0],
             'Skills': ['Common Knowledge (Bretonnia', 'Tilea or the Wasteland)', 'Consume Alcohol or Perception',
                        'Dodge Blow', 'Row', 'Sail', 'Scale SheerSurface', 'Speak Language (Breton', 'Norse or Tilean)',
                        'Swim'],
@@ -388,7 +388,7 @@ def career_selection(career_name):
             'Career Entries': ['Boatman', 'Envoy', 'Ferryman', 'Norse Berserker', 'Smuggler'],
             'Career Exits': ['Marine', 'Mate', 'Navigator', 'Rogue', 'Smuggler']},
         'Servant Advance Scheme': {
-            'Statblock': [5, 0, 5, 0, 10, 5, 10, 5, 2, 0, 0, 0, 0, 0, 0],
+            'Statblock': [5, 0, 5, 0, 10, 5, 10, 5, 2, 0, 0, 0, 0, 0, 0, 0],
             'Skills': ['Animal Care or Trade (Cook)', 'Blather', 'Dodge Blow', 'Drive or Search', 'Evaluate or Haggle',
                        'Perception', 'Read/Write or Sleight of Hand'],
             'Talents': ['Acute Hearing or Flee!', 'Etiquette or Lightning Reflexes or Very Resilient'],
@@ -397,7 +397,7 @@ def career_selection(career_name):
             'Career Entries': ['Camp Follower', 'Peasant', 'Rogue'],
             'Career Exits': ['Agitator', 'Burgher', 'Camp Follower', 'Messenger', 'Spy', 'Thief', 'Valet']},
         'Shieldbreaker Advance Scheme': {
-            'Statblock': [10, 0, 5, 5, 10, 0, 5, 0, 2, 0, 0, 0, 0, 0, 0],
+            'Statblock': [10, 0, 5, 5, 10, 0, 5, 0, 2, 0, 0, 0, 0, 0, 0, 0],
             'Skills': ['Dodge Blow', 'Navigation', 'Perception', 'Scale Sheer Surface', 'Shadowing'],
             'Talents': ['Acute Hearing or Coolheaded', 'Strike Mighty Blow', 'Strike to Injure', 'Strike to Stun'],
             'Trappings': ['Crossbow with 10 bolts', 'Medium Armour (Mail Coat', 'Leather Jack and LeatherLeggings)',
@@ -405,7 +405,7 @@ def career_selection(career_name):
             'Career Entries': ['Kislevite Kossar', 'Miner', 'Rat Catcher', 'Runebearer', 'Smuggler', 'Tomb Robber'],
             'Career Exits': ['Pit Fighter', 'Runebearer', 'Smuggler', 'Tomb Robber', 'Veteran']},
         'Smuggler Advance Scheme': {
-            'Statblock': [5, 5, 0, 0, 10, 10, 0, 10, 2, 0, 0, 0, 0, 0, 0],
+            'Statblock': [5, 5, 0, 0, 10, 10, 0, 10, 2, 0, 0, 0, 0, 0, 0, 0],
             'Skills': ['Drive', 'Evaluate', 'Gossip or Secret Language (Thieves’ Tongue)', 'Haggle', 'Perception',
                        'Row', 'Search', 'SilentMove', 'Speak Language (Breton or Kislevian) or Secret Signs (Thief)',
                        'Swim'],
@@ -415,7 +415,7 @@ def career_selection(career_name):
                                'Marine', 'Miner', 'Seaman', 'Shieldbreaker'],
             'Career Exits': ['Boatman', 'Charlatan', 'Fence', 'Seaman', 'Shieldbreaker', 'Thief']},
         'Soldier Advance Scheme': {
-            'Statblock': [10, 10, 0, 0, 10, 0, 5, 0, 2, 0, 0, 0, 0, 0, 0],
+            'Statblock': [10, 10, 0, 0, 10, 0, 5, 0, 2, 0, 0, 0, 0, 0, 0, 0],
             'Skills': ['Animal Care or Heal', 'Common Knowledge (the Empire) or Perception', 'Dodge Blow',
                        'Drive or Gamble or Gossip', 'Intimidate'],
             'Talents': ['Disarm or Quick Draw', 'Sharpshooter or Strike Mighty Blow',
@@ -426,7 +426,7 @@ def career_selection(career_name):
             'Career Entries': ['Flagellant', 'Hunter', 'Messenger', 'Toll Watchman'],
             'Career Exits': ['Mercenary', 'Outrider', 'Sergeant', 'Veteran', 'Watchman']},
         'Squire Advance Scheme': {
-            'Statblock': [10, 5, 5, 5, 5, 0, 0, 5, 2, 0, 0, 0, 0, 0, 0],
+            'Statblock': [10, 5, 5, 5, 5, 0, 0, 5, 2, 0, 0, 0, 0, 0, 0, 0],
             'Skills': ['Academic Knowledge (Genealogy/Heraldry) or Common Knowledge (Bretonnia)', 'Animal Care',
                        'Animal Training', 'Charm or Gossip', 'Dodge Ride', 'Speak Language (Breton or Reikspiel)'],
             'Talents': ['Etiquette', 'Specialist Weapon Group (Cavalry)', 'Strike Mighty Blow'],
@@ -435,7 +435,7 @@ def career_selection(career_name):
             'Career Entries': ['Herald', 'Noble', 'Valet'],
             'Career Exits': ['Knight', 'Noble', 'Outlaw', 'Sergeant', 'Veteran']},
         'Student Advance Scheme': {
-            'Statblock': [0, 0, 0, 0, 10, 10, 5, 10, 2, 0, 0, 0, 0, 0, 0],
+            'Statblock': [0, 0, 0, 0, 10, 10, 5, 10, 2, 0, 0, 0, 0, 0, 0, 0],
             'Skills': ['Academic Knowledge (any one)', 'Academic Knowledge (any one) or Gossip',
                        'Charm or Consume Alcohol', 'Heal or Search', 'Perception', 'Read/Write',
                        'Speak Language (Classical)', 'Speak Language(Reikspiel)'],
@@ -445,7 +445,7 @@ def career_selection(career_name):
             'Career Exits': ['Agitator', 'Apprentice Wizard', 'Barber- Surgeon', 'Engineer', 'Envoy', 'Initiate',
                              'Physician', 'Scholar']},
         'Thief Advance Scheme': {
-            'Statblock': [5, 5, 0, 0, 15, 5, 0, 10, 2, 0, 0, 0, 0, 0, 0],
+            'Statblock': [5, 5, 0, 0, 15, 5, 0, 10, 2, 0, 0, 0, 0, 0, 0, 0],
             'Skills': ['Charm or Scale Sheer Surface', 'Evaluate or Disguise', 'Gamble or Pick Lock',
                        'Read/Write or Sleight of Hand', 'Search',
                        'Secret Language (Thieves’ Tongue) or Secret Signs (Thief)', 'Silent Move'],
@@ -455,7 +455,7 @@ def career_selection(career_name):
                                'Servant', 'Smuggler', 'Toll Keeper', 'Tomb Robber', 'Vagabond'],
             'Career Exits': ['Cat Burglar', 'Entertainer', 'Fence', 'Rogue', 'Tomb Robber']},
         'Thug Advance Scheme': {
-            'Statblock': [10, 0, 5, 5, 0, 0, 5, 5, 2, 0, 0, 0, 0, 0, 0],
+            'Statblock': [10, 0, 5, 5, 0, 0, 5, 5, 2, 0, 0, 0, 0, 0, 0, 0],
             'Skills': ['Consume Alcohol', 'Dodge Blow', 'Gamble', 'Secret Language (Thieves’ Tongue)'],
             'Talents': ['Coolheaded or Lightning Reflexes', 'Resistance to Poison or Quick Draw',
                         'Strike to Injure or Wrestling', 'Strike to Stun'],
@@ -463,7 +463,7 @@ def career_selection(career_name):
             'Career Entries': ['Marine', 'Protagonist'],
             'Career Exits': ['Bodyguard', 'Interrogator', 'Mercenary', 'Pit Fighter', 'RacketeerToll']},
         'Toll Keeper Advance Scheme': {
-            'Statblock': [10, 5, 5, 10, 5, 0, 5, 0, 2, 0, 0, 0, 0, 0, 0],
+            'Statblock': [10, 5, 5, 10, 5, 0, 5, 0, 2, 0, 0, 0, 0, 0, 0, 0],
             'Skills': ['Dodge Blow', 'Evaluate', 'Gossip or Haggle', 'Read/Write', 'Search', 'Speak Language(Kislevian',
                        'or Tilean)'],
             'Talents': ['Lightning Reflexes or Marksman'],
@@ -472,7 +472,7 @@ def career_selection(career_name):
             'Career Entries': ['Bailiff', 'Coachman', 'Roadwarden'],
             'Career Exits': ['Ferryman', 'Fieldwarden', 'Highwayman', 'Soldier', 'Politician', 'Thief']},
         'Tomb Robber Advance Scheme': {
-            'Statblock': [10, 0, 0, 0, 10, 10, 10, 5, 2, 0, 0, 0, 0, 0, 0],
+            'Statblock': [10, 0, 0, 0, 10, 10, 10, 5, 2, 0, 0, 0, 0, 0, 0, 0],
             'Skills': ['Common Knowledge (the Empire) or Secret Signs (Thief)', 'Concealment or Outdoor Survival',
                        'Perception', 'Pick Lock or Silent Move', 'Read/ Scale Sheer Surface', 'Search',
                        'Speak Language ( Khazalid or Eltharin)'],
@@ -481,7 +481,7 @@ def career_selection(career_name):
             'Career Entries': ['Runebearer', 'Shieldbreaker', 'Thief'],
             'Career Exits': ['Fence', 'Rat Catcher', 'Shieldbreaker', 'Vampire Hunter']},
         'Tradesman Advance Scheme': {
-            'Statblock': [0, 0, 5, 5, 10, 5, 10, 0, 2, 0, 0, 0, 0, 0, 0],
+            'Statblock': [0, 0, 5, 5, 10, 5, 10, 0, 2, 0, 0, 0, 0, 0, 0, 0],
             'Skills': ['Animal Care or Gossip', 'Drive', 'Haggle', 'Perception', 'Read/Write',
                        'Secret Language (Guild Tongue)', 'Trade (any two)'],
             'Talents': ['Dealmaker or Savvy'],
@@ -489,7 +489,7 @@ def career_selection(career_name):
             'Career Entries': ['Barber-Surgeon', 'Burgher', 'Camp Peasant', 'Watchman'],
             'Career Exits': ['Artisan', 'Engineer', 'Envoy', 'Militiaman', 'Zealot']},
         'Troll Slayer Advance Scheme': {
-            'Statblock': [10, 0, 5, 5, 5, 0, 10, 0, 3, 0, 0, 0, 0, 0, 0],
+            'Statblock': [10, 0, 5, 5, 5, 0, 10, 0, 3, 0, 0, 0, 0, 0, 0, 0],
             'Skills': ['Consume Alcohol', 'Dodge Blow', 'Intimidate'],
             'Talents': ['Disarm or Quick Draw', 'Hardy', 'Lightning Reflexes or Very Resilient',
                         'Specialist Weapon Group (Two-handed)', 'Street Fighter', 'Strike Mighty Blow'],
@@ -497,7 +497,7 @@ def career_selection(career_name):
             'Career Entries': ['Pit Fighter'],
             'Career Exits': ['Giant Slayer']},
         'Vagabond Advance Scheme': {
-            'Statblock': [5, 10, 0, 0, 10, 5, 0, 5, 2, 0, 0, 0, 0, 0, 0],
+            'Statblock': [5, 10, 0, 0, 10, 5, 0, 5, 2, 0, 0, 0, 0, 0, 0, 0],
             'Skills': ['Common Knowledge (Bretonnia', 'Estalia', 'Kislev', 'or Tilea)',
                        'Gossip or Secret Language (Ranger Tongue orThieves’ Tongue)', 'Haggle or Swim',
                        'Heal or Navigation', 'Outdoor Survival', 'Performer ( Singer or Storyteller) or Secret Signs '
@@ -508,7 +508,7 @@ def career_selection(career_name):
                                'Fieldwarden', 'Hedge Wizard', 'Kithband Warrior', 'Outlaw', 'Soldier', 'Woodsman'],
             'Career Exits': ['Bone Picker', 'Entertainer', 'Friar', 'Scout', 'Woodsman']},
         'Valet Advance Scheme': {
-            'Statblock': [0, 0, 0, 0, 10, 10, 5, 10, 2, 0, 0, 0, 0, 0, 0],
+            'Statblock': [0, 0, 0, 0, 10, 10, 5, 10, 2, 0, 0, 0, 0, 0, 0, 0],
             'Skills': ['Academic Knowledge (Genealogy/Heraldry)', 'Evaluate',
                        'Gossip or Speak Language (Breton or Reikspiel)', 'Haggle', 'Perception', 'Read/Write',
                        'Search'],
@@ -517,7 +517,7 @@ def career_selection(career_name):
             'Career Entries': ['Burgher', 'Servant'],
             'Career Exits': ['Herald', 'Rogue', 'Squire', 'Steward', 'Student']},
         'Watchman Advance Scheme': {
-            'Statblock': [10, 5, 5, 0, 5, 10, 0, 5, 2, 0, 0, 0, 0, 0, 0],
+            'Statblock': [10, 5, 5, 0, 5, 10, 0, 5, 2, 0, 0, 0, 0, 0, 0, 0],
             'Skills': ['Academic Knowledge (Law)', 'Dodge Blow', 'Follow Trail', 'Gossip', 'Intimidate', 'Perception',
                        'Search'],
             'Talents': ['Coolheaded or Savvy', 'Disarm or Street Strike Mighty Blow', 'Strike to Stun'],
@@ -525,7 +525,7 @@ def career_selection(career_name):
             'Career Entries': ['Jailer', 'Soldier'],
             'Career Exits': ['Mercenary', 'Racketeer', 'Sergeant', 'Soldier', 'Tradesman']},
         'Woodsman Advance Scheme': {
-            'Statblock': [10, 0, 10, 0, 5, 0, 10, 0, 3, 0, 0, 0, 0, 0, 0],
+            'Statblock': [10, 0, 10, 0, 5, 0, 10, 0, 3, 0, 0, 0, 0, 0, 0, 0],
             'Skills': ['Concealment', 'Follow Trail or Set Perception', 'Scale Sheer Surface',
                        'Secret Language (Ranger Tongue)', 'Secret Signs (Ranger)', 'Silent Move'],
             'Talents': ['Fleet Footed or Very Resilient', 'Rover', 'Specialist Weapon Group (Two-handed)'],
@@ -533,7 +533,7 @@ def career_selection(career_name):
             'Career Entries': ['Charcoal-Burner', 'Vagabond'],
             'Career Exits': ['Hunter', 'Militiaman', 'Outlaw', 'Vagabond']},
         'Zealot Advance Scheme': {
-            'Statblock': [10, 0, 5, 10, 0, 0, 10, 5, 2, 0, 0, 0, 0, 0, 0],
+            'Statblock': [10, 0, 5, 10, 0, 0, 10, 5, 2, 0, 0, 0, 0, 0, 0, 0],
             'Skills': ['Academic Knowledge (Theology)', 'Charm', 'Common Knowledge (the Empire)', 'Intimidate',
                        'Read/Write'],
             'Talents': ['Coolheaded or Very Strong', 'Hardy or Public Speaking', 'Specialist Weapon Group (Flail)'],
@@ -542,7 +542,7 @@ def career_selection(career_name):
             'Career Entries': ['Agitator', 'Initiate', 'Judicial Peasant', 'Tradesman'],
             'Career Exits': ['Agitator', 'Initiate', 'Flagellant', 'Friar', 'Outlaw']},
         'Anointed Priest Advance Scheme': {
-            'Statblock': [15, 15, 10, 10, 10, 15, 25, 20, 5, 0, 0, 0, 2, 0, 0],
+            'Statblock': [15, 15, 10, 10, 10, 15, 25, 20, 5, 0, 0, 0, 2, 0, 0, 0],
             'Skills': ['Academic Knowledge (any two)', 'Academic Knowledge (Theology)', 'Channelling', 'Charm',
                        'CommonKnowledge (any two)', 'Gossip', 'Heal', 'Magical Ride or Swim',
                        'Speak Arcane Language (Magick)', 'Speak Language (any two)'],
@@ -552,7 +552,7 @@ def career_selection(career_name):
             'Career Entries': ['Priest'],
             'Career Exits': ['Demagogue', 'Flagellant', 'High Priest', 'Witch Hunter']},
         'Artisan Advance Scheme': {
-            'Statblock': [0, 0, 10, 10, 20, 10, 10, 10, 3, 0, 0, 0, 0, 0, 0],
+            'Statblock': [0, 0, 10, 10, 20, 10, 10, 10, 3, 0, 0, 0, 0, 0, 0, 0],
             'Skills': ['Drive', 'Evaluate', 'Gossip', 'Haggle', 'Perception', 'Secret Language (Guild Tongue)',
                        'Speak Language ( Breton', 'or Tilean)', 'Trade (any three)'],
             'Talents': ['Artistic or Etiquette'],
@@ -560,7 +560,7 @@ def career_selection(career_name):
             'Career Entries': ['Engineer', 'Militiaman', 'Navigator', 'Tradesman'],
             'Career Exits': ['Demagogue', 'Engineer', 'Guild Merchant', 'Militiaman']},
         'Assassin Advance Scheme': {
-            'Statblock': [25, 25, 10, 10, 30, 20, 10, 20, 4, 0, 0, 0, 0, 0, 0],
+            'Statblock': [25, 25, 10, 10, 30, 20, 10, 20, 4, 0, 0, 0, 0, 0, 0, 0],
             'Skills': ['Concealment', 'Disguise', 'Gossip', 'Perception', 'Prepare Poison', 'Scale Sheer Surface',
                        'Secret Signs (Thief)', 'Shadowing', 'Silent Move'],
             'Talents': ['Quick Draw', 'Lightning Parry', 'Sharpshooter', 'Specialist Weapon Group (Entangling)',
@@ -570,7 +570,7 @@ def career_selection(career_name):
             'Career Entries': ['Champion', 'Duellist', 'Judicial Champion', 'Outlaw Chief', 'Spy', 'Targeteer'],
             'Career Exits': ['Champion', 'Outlaw', 'Rogue', 'Sergeant', 'Witch Hunter']},
         'Captain Advance Scheme': {
-            'Statblock': [30, 20, 20, 20, 20, 15, 15, 25, 7, 0, 0, 0, 0, 0, 0],
+            'Statblock': [30, 20, 20, 20, 20, 15, 15, 25, 7, 0, 0, 0, 0, 0, 0, 0],
             'Skills': ['Academic Knowledge (Strategy/ Tactics)', 'Animal Care', 'Common Knowledge (any three)',
                        'DodgeBlow', 'Gossip', 'Read/Write', 'Ride', 'SecretLanguage (Battle Tongue)',
                        'Speak Language(Kislevian or Tilean)'],
@@ -583,7 +583,7 @@ def career_selection(career_name):
                                'Outlaw Chief', 'Sergeant', 'Witch Hunter'],
             'Career Exits': ['Agitator', 'Explorer', 'Merchant', 'Outlaw', 'Politician']},
         'Cat Burglar Advance Scheme': {
-            'Statblock': [10, 10, 5, 5, 25, 10, 10, 0, 4, 0, 0, 0, 0, 0, 0],
+            'Statblock': [10, 10, 5, 5, 25, 10, 10, 0, 4, 0, 0, 0, 0, 0, 0, 0],
             'Skills': ['Concealment', 'Evaluate', 'Gossip', 'Haggle', 'Pick Lock', 'Scale Sheer Surface', 'Search',
                        'Secret Language (Thieves’ Tongue)', 'Secret Signs (Thief)', 'Silent Move'],
             'Talents': ['Alley Cat', 'Street Fighting', 'Streetwise', 'Trapfinder'],
@@ -591,7 +591,7 @@ def career_selection(career_name):
             'Career Entries': ['Bone Picker', 'Charlatan', 'Grave Rat Catcher', 'Thief'],
             'Career Exits': ['Crime Lord', 'Fence', 'Master Thief', 'Vagabond']},
         'Champion Advance Scheme': {
-            'Statblock': [40, 40, 25, 25, 30, 0, 20, 0, 8, 0, 0, 0, 0, 0, 0],
+            'Statblock': [40, 40, 25, 25, 30, 0, 20, 0, 8, 0, 0, 0, 0, 0, 0, 0],
             'Skills': ['Dodge Blow', 'Evaluate', 'Intimidate', 'Perception'],
             'Talents': ['Fleet Footed or Lightning Reflexes', 'Lightning Parry', 'Master Gunner', 'Mighty Shot',
                         'Quick Rapid Reload', 'Specialist Weapon Group (any three)', 'Wrestling'],
@@ -600,7 +600,7 @@ def career_selection(career_name):
                                'Witch Hunter'],
             'Career Exits': ['Assassin', 'Scout', 'Sergeant', 'Witch Hunter']},
         'Charlatan Advance Scheme': {
-            'Statblock': [10, 10, 5, 10, 15, 15, 15, 25, 4, 0, 0, 0, 0, 0, 0],
+            'Statblock': [10, 10, 5, 10, 15, 15, 15, 25, 4, 0, 0, 0, 0, 0, 0, 0],
             'Skills': ['Blather', 'Charm', 'Common Knowledge (Bretonnia or Tilea)', 'Disguise', 'Evaluate', 'Gamble',
                        'Gossip', 'Perception', 'Secret Language (Thieves’ Tongue)', 'Sleightof Hand',
                        'Speak Language (Breton or Tilean)', 'SpeakLanguage (Reikspiel)'],
@@ -611,7 +611,7 @@ def career_selection(career_name):
                                'Journeyman Minstrel', 'Rogue', 'Smuggler', 'Thief'],
             'Career Exits': ['Cat Burglar', 'Demagogue', 'Outlaw', 'Politician', 'Spy']},
         'Coutier Advance Scheme': {
-            'Statblock': [5, 5, 0, 0, 10, 20, 20, 20, 4, 0, 0, 0, 0, 0, 0],
+            'Statblock': [5, 5, 0, 0, 10, 20, 20, 20, 4, 0, 0, 0, 0, 0, 0, 0],
             'Skills': ['Academic Knowledge (the Arts or History) or Gamble', 'Blather', 'Charm',
                        'Command or Performer(any one)', 'Common Knowledge (Bretonnia or Tilea)', 'Evaluate', 'Gossip',
                        'Perception', 'Read/Write', 'Speak Language (Breton or Tilean)', 'Speak Language(Reikspiel)'],
@@ -621,7 +621,7 @@ def career_selection(career_name):
             'Career Entries': ['Noble', 'Herald', 'Pistolier', 'Politician'],
             'Career Exits': ['Charlatan', 'Duellist', 'Noble Politician', 'Steward', 'Spy']},
         'Daemon Slayer Advance Scheme': {
-            'Statblock': [40, 0, 30, 30, 20, 0, 30, 0, 8, 0, 0, 0, 0, 0, 0],
+            'Statblock': [40, 0, 30, 30, 20, 0, 30, 0, 8, 0, 0, 0, 0, 0, 0, 0],
             'Skills': ['Common Knowledge (any two)', 'Consume Alcohol', 'Dodge Blow', 'Intimidate',
                        'Scale SheerSurface'],
             'Talents': ['Lightning Parry', 'Unsettling'],
@@ -629,7 +629,7 @@ def career_selection(career_name):
             'Career Entries': ['Giant Slayer'],
             'Career Exits': ['Glorious death']},
         'Demagogue Advance Scheme': {
-            'Statblock': [10, 10, 0, 10, 15, 20, 15, 30, 4, 0, 0, 0, 0, 0, 0],
+            'Statblock': [10, 10, 0, 10, 15, 20, 15, 30, 4, 0, 0, 0, 0, 0, 0, 0],
             'Skills': ['Academic Knowledge (History)', 'Academic Knowledge (Law)', 'Blather', 'Charm', 'Command',
                        'Common Knowledge(the Empire)', 'Concealment', 'Disguise', 'Dodge Blow', 'Intimidate',
                        'Perception', 'Speak Language (Reikspiel)'],
@@ -639,7 +639,7 @@ def career_selection(career_name):
                                'Initiate', 'Minstrel', 'Outlaw Chief', 'Politician', 'Rogue', 'Vampire Witch Hunter'],
             'Career Exits': ['Crime Lord', 'Friar', 'Mercenary', 'Outlaw', 'Politician']},
         'Duellist Advance Scheme': {
-            'Statblock': [20, 20, 10, 20, 20, 15, 15, 10, 4, 0, 0, 0, 0, 0, 0],
+            'Statblock': [20, 20, 10, 20, 20, 15, 15, 10, 4, 0, 0, 0, 0, 0, 0, 0],
             'Skills': ['Charm', 'Dodge Blow', 'Gamble', 'Gossip', 'Perception', 'Sleight of Hand'],
             'Talents': ['Ambidextrous or Disarm', 'Etiquette', 'Master Mighty Shot', 'Quick Draw', 'Sharpshooter',
                         'Specialist Weapon Group (Fencing)', 'Specialist Weapon Group(Gunpowder)',
@@ -648,7 +648,7 @@ def career_selection(career_name):
             'Career Entries': ['Courtier', 'Estalian Diestro', 'Pistolier', 'Protagonist', 'Sergeant', 'Targeteer'],
             'Career Exits': ['Assassin', 'Champion', 'Highwayman', 'Sergeant']},
         'Engineer Advance Scheme': {
-            'Statblock': [10, 15, 5, 5, 10, 20, 10, 0, 4, 0, 0, 0, 0, 0, 0],
+            'Statblock': [10, 15, 5, 5, 10, 20, 10, 0, 4, 0, 0, 0, 0, 0, 0, 0],
             'Skills': ['Academic Knowledge (Engineering)', 'Academic Knowledge (Science)',
                        'Common Knowledge (Dwarfs or Tilea)', 'Drive or Ride', 'Perception', 'Read/Write',
                        'SpeakLanguage (Khazalid or Tilean)', 'Trade (Gunsmith)'],
@@ -657,7 +657,7 @@ def career_selection(career_name):
             'Career Entries': ['Artisan', 'Miner', 'Student', 'Tradesman'],
             'Career Exits': ['Artisan', 'Explorer', 'Guild Master', 'Smuggler']},
         'Explorer Advance Scheme': {
-            'Statblock': [20, 20, 10, 15, 15, 25, 20, 15, 6, 0, 0, 0, 0, 0, 0],
+            'Statblock': [20, 20, 10, 15, 15, 25, 20, 15, 6, 0, 0, 0, 0, 0, 0, 0],
             'Skills': ['Academic Knowledge (History or Law)', 'Common Knowledge (any three)', 'Drive', 'Follow Trail', 
                        'Navigation', 'Outdoor Survival', 'Read/Write', 'Ride', 'Scale Sheer Surface', 
                        'Secret Language (Ranger Tongue)', 'Secret Signs (Scout)', 'Speak Language(any three)', 'Swim', 
@@ -670,7 +670,7 @@ def career_selection(career_name):
                                'Scout', 'Sea Captain', 'Spy', 'Wizard Lord'],
             'Career Exits': ['Captain', 'Merchant', 'Sea Captain', 'Spy']},
         'Fence Advance Scheme': {
-            'Statblock': [15, 10, 10, 5, 10, 5, 10, 10, 4, 0, 0, 0, 0, 0, 0],
+            'Statblock': [15, 10, 10, 5, 10, 5, 10, 10, 4, 0, 0, 0, 0, 0, 0, 0],
             'Skills': ['Evaluate', 'Gamble', 'Gossip', 'Haggle', 'Perception', 'Sleight of Hand'],
             'Talents': ['Dealmaker or Streetwise', 'Strike to Stun', 'Super Numerate'],
             'Trappings': ['Trade Tools (Engraver’s Kit)', 'Writing Kit'],
@@ -678,7 +678,7 @@ def career_selection(career_name):
                                'Smuggler', 'Thief', 'Tomb Robber'],
             'Career Exits': ['Charlatan', 'Crime Lord', 'Master Thief', 'Racketeer']},
         'Flagellant Advance Scheme': {
-            'Statblock': [15, 0, 10, 15, 5, 0, 20, 10, 6, 0, 0, 0, 0, 0, 0],
+            'Statblock': [15, 0, 10, 15, 5, 0, 20, 10, 6, 0, 0, 0, 0, 0, 0, 0],
             'Skills': ['Academic Knowledge (Theology)', 'Charm', 'Intimidate', 'Speak Language (Classical)'],
             'Talents': ['Fearless', 'Specialist Weapon Group (Flail or Two-handed Weapon)', 'Strike Mighty Blow'],
             'Trappings': ['Flail or Great Weapon', 'Bottle of Good Craftsmanship Spirits', 'Religious Symbol', 
@@ -686,7 +686,7 @@ def career_selection(career_name):
             'Career Entries': ['Anointed Priest', 'Friar', 'Priest', 'Zealot'],
             'Career Exits': ['Demagogue', 'Interrogator', 'Priest', 'Veteran']},
         'Friar Advance Scheme': {
-            'Statblock': [10, 0, 5, 10, 0, 15, 15, 15, 4, 0, 0, 0, 0, 0, 0],
+            'Statblock': [10, 0, 5, 10, 0, 15, 15, 15, 4, 0, 0, 0, 0, 0, 0, 0],
             'Skills': ['Academic Knowledge (Theology)', 'Animal Care', 'Common Knowledge (any two)', 'Outdoor Survival',
                        'Perception', 'Speak Language(Breton', 'Estalian', 'Kislevian', 'or Tilean)',
                        'SpeakLanguage (Classical)', 'Speak Language (Reikspiel)'],
@@ -695,7 +695,7 @@ def career_selection(career_name):
             'Career Entries': ['Demagogue', 'Initiate', 'Physician', 'Vagabond', 'Zealot'],
             'Career Exits': ['Demagogue', 'Flagellant', 'Priest', 'Scholar']},
         'Ghost Strider Advance Scheme': {
-            'Statblock': [20, 30, 15, 15, 25, 20, 20, 0, 6, 0, 0, 0, 0, 0, 0],
+            'Statblock': [20, 30, 15, 15, 25, 20, 20, 0, 6, 0, 0, 0, 0, 0, 0, 0],
             'Skills': ['Concealment', 'Dodge Blow', 'Follow Intimidate', 'Lip Reading', 'Navigation',
                        'Outdoor Survival', 'Perception', 'Secret Language (RangerTongue)', 'Secret Signs (Ranger)',
                        'Set Shadowing', 'Silent Move'],
@@ -705,14 +705,14 @@ def career_selection(career_name):
             'Career Entries': ['Scout'],
             'Career Exits': ['Captain', 'Outlaw Chief', 'Targeteer', 'Vampire Hunter']},
         'Giant Slayer Advance Scheme': {
-            'Statblock': [25, 0, 15, 15, 10, 0, 20, 0, 6, 0, 0, 0, 0, 0, 0],
+            'Statblock': [25, 0, 15, 15, 10, 0, 20, 0, 6, 0, 0, 0, 0, 0, 0, 0],
             'Skills': ['Common Knowledge (any one)', 'Consume Dodge Blow', 'Intimidate', 'Perception'],
             'Talents': ['Fearless', 'Resistance to Poison', 'Specialist Weapon Group (Flail)', 'Strike to Injure'],
             'Trappings': ['Great Weapon'],
             'Career Entries': ['Troll Slayer'],
             'Career Exits': ['Daemon Slayer']},
         'Guild Master Advance Scheme': {
-            'Statblock': [10, 10, 0, 10, 15, 30, 20, 35, 5, 0, 0, 0, 0, 0, 0],
+            'Statblock': [10, 10, 0, 10, 15, 30, 20, 35, 5, 0, 0, 0, 0, 0, 0, 0],
             'Skills': ['Academic Knowledge (History)', 'Charm', 'Common Knowledge (the Empire)', 'Evaluate', 'Haggle', 
                        'Perception', 'Secret Language (Guild Tongue)', 'Speak Language (Breton, Estalian, Kislevian, or'
                                                                        ' Norse)', 'Speak Language (Reikspiel)', 
@@ -722,7 +722,7 @@ def career_selection(career_name):
             'Career Entries': ['Artisan', 'Engineer', 'Merchant', 'Wizard Lord'],
             'Career Exits': ['Crime Lord', 'Politician', 'Racketeer']},
         'Herald Advance Scheme': {
-            'Statblock': [10, 10, 5, 5, 15, 15, 10, 20, 4, 0, 0, 0, 0, 0, 0],
+            'Statblock': [10, 10, 5, 5, 15, 15, 10, 20, 4, 0, 0, 0, 0, 0, 0, 0],
             'Skills': ['Academic Knowledge (Genealogy/Heraldry)', 'Academic Knowledge (History)', 'Blather', 'Charm',
                        'CommonKnowledge (Bretonnia', 'Kislev', 'or Tilea)', 'CommonKnowledge (the Empire)', 'Evaluate',
                        'Gossip', 'Perception', 'Read/Write', 'Ride', 'Speak Language(Breton', 'Kislevian', 'or Tilean)',
@@ -732,7 +732,7 @@ def career_selection(career_name):
             'Career Entries': ['Messenger', 'Valet'],
             'Career Exits': ['Agitator', 'Courtier', 'Entertainer', 'Politician', 'Squire']},
         'High Priest Advance Scheme': {
-            'Statblock': [20, 20, 15, 15, 15, 20, 30, 25, 6, 0, 0, 0, 3, 0, 0],
+            'Statblock': [20, 20, 15, 15, 15, 20, 30, 25, 6, 0, 0, 0, 3, 0, 0, 0],
             'Skills': ['Academic Knowledge (any three)', 'Academic Knowledge (Theology)', 'Channelling', 
                        'Common Knowledge (any two)', 'Gossip', 'Intimidate', 'Magical Sense', 'Ride or Swim', 
                        'Speak Arcane Language (Magick)', 'Speak Language (anythree)'],
@@ -742,7 +742,7 @@ def career_selection(career_name):
             'Career Entries': ['Anointed Priest'],
             'Career Exits': ['Politician', 'Scholar', 'Witch Hunter']},
         'Highwayman Advance Scheme': {
-            'Statblock': [20, 20, 10, 10, 30, 20, 15, 25, 4, 0, 0, 0, 0, 0, 0],
+            'Statblock': [20, 20, 10, 10, 30, 20, 15, 25, 4, 0, 0, 0, 0, 0, 0, 0],
             'Skills': ['Animal Care', 'Animal Training', 'Common Knowledge (the Empire)', 'Gossip', 'Ride', 
                        'Silent Move'],
             'Talents': ['Ambidextrous', 'Etiquette', 'Master Gunner', 'Mighty Shot', 'Sharpshooter', 
@@ -754,7 +754,7 @@ def career_selection(career_name):
                                'Toll Keeper'],
             'Career Exits': ['Agitator', 'Duellist', 'Master Theif', 'Outlaw Chief', 'Sergeant']},
         'Innkeeper Advance Scheme': {
-            'Statblock': [10, 5, 5, 10, 20, 10, 10, 20, 4, 0, 0, 0, 0, 0, 0],
+            'Statblock': [10, 5, 5, 10, 20, 10, 10, 20, 4, 0, 0, 0, 0, 0, 0, 0],
             'Skills': ['Blather or Lip Reading', 'Charm', 'Common Knowledge (the Empire)', 'Consume Evaluate', 
                        'Gossip', 'Haggle', 'Perception', 'Read/Write or Sleight of Hand', 
                        'Speak Language ( Kislevian, Reikspiel or Tilean)', 'Trade (Cook)'],
@@ -763,14 +763,14 @@ def career_selection(career_name):
             'Career Entries': ['Burgher', 'Servant'],
             'Career Exits': ['Burgher', 'Fence', 'Merchant', 'Outlaw', 'Smuggle']},
         'Interrogator Advance Scheme': {
-            'Statblock': [15, 0, 20, 10, 10, 10, 20, 15, 4, 0, 0, 0, 0, 0, 0],
+            'Statblock': [15, 0, 20, 10, 10, 10, 20, 15, 4, 0, 0, 0, 0, 0, 0, 0],
             'Skills': ['Charm', 'Heal', 'Intimidate', 'Perception', 'Torture'],
             'Talents': ['Menacing', 'Specialist Weapon Group (Flail)', 'Wrestling'],
             'Trappings': ['5 knives', 'Flail', '3 sets of manacles'],
             'Career Entries': ['Barber-Surgeon', 'Bodyguard', 'Jailer', 'Thug'],
             'Career Exits': ['Physician', 'Racketeer', 'Thief']},
         'Journeyman Wizard Advance Scheme': {
-            'Statblock': [5, 5, 0, 5, 10, 20, 25, 10, 3, 0, 0, 0, 2, 0, 0],
+            'Statblock': [5, 5, 0, 5, 10, 20, 25, 10, 3, 0, 0, 0, 2, 0, 0, 0],
             'Skills': ['Academic Knowledge (Magic)', 'Academic Knowledge (any one)', 'Channelling', 
                        'Charm or Intimidate', 'Common Knowledge (any two)', 'Magical Sense', 'Read/Write', 
                        'Ride or Swim', 'SpeakArcane Language (Magick)', 'Speak Language(any two)'],
@@ -780,7 +780,7 @@ def career_selection(career_name):
             'Career Entries': ['Apprentice Wizard'],
             'Career Exits': ['Charlatan', 'Master Wizard', 'Scholar']},
         'Judicial Champion Advance Scheme': {
-            'Statblock': [35, 0, 15, 15, 20, 10, 15, 0, 6, 0, 0, 0, 0, 0, 0],
+            'Statblock': [35, 0, 15, 15, 20, 10, 15, 0, 6, 0, 0, 0, 0, 0, 0, 0],
             'Skills': ['Dodge Blow', 'Perception'],
             'Talents': ['Lightning Parry', 'Specialist Weapon Group (Fencing)', 'Specialist Weapon Group (Flail)', 
                         'SpecialistWeapon Group (Parrying)', 'Specialist Weapon Group(Two-handed)'],
@@ -789,7 +789,7 @@ def career_selection(career_name):
             'Career Entries': ['Sergeant', 'Veteran'],
             'Career Exits': ['Assassin', 'Champion', 'Sergeant', 'Witch Hunter', 'Zealot']},
         'Knight Advance Scheme': {
-            'Statblock': [25, 0, 15, 15, 15, 5, 15, 5, 4, 0, 0, 0, 0, 0, 0],
+            'Statblock': [25, 0, 15, 15, 15, 5, 15, 5, 4, 0, 0, 0, 0, 0, 0, 0],
             'Skills': ['Academic Knowledge (Genealogy/Heraldry or Religion)', 'Academic Knowledge (Strategy/Tactics)',
                        'Dodge Blow', 'Perception', 'Ride', 'Secret Language(Battle Tongue)', 
                        'Speak Language (any two)'],
@@ -800,7 +800,7 @@ def career_selection(career_name):
             'Career Entries': ['Noble Lord', 'Pistolier', 'Sergeant', 'Vampire Hunter'],
             'Career Exits': ['Captain', 'Initiate', 'Knight of the Inner Noble Lord', 'Vampire Hunter']},
         'Knight of the Inner Circle Advance Scheme': {
-            'Statblock': [35, 10, 20, 20, 20, 15, 25, 15, 8, 0, 0, 0, 0, 0, 0],
+            'Statblock': [35, 10, 20, 20, 20, 15, 25, 15, 8, 0, 0, 0, 0, 0, 0, 0],
             'Skills': ['Academic Knowledge (Genealogy/Heraldry or Religion)', 'Academic Knowledge (Strategy/Tactics)', 
                        'Animal Training', 'Charm', 'Command', 'CommonKnowledge (any three)', 'Dodge Blow', 'Perception',
                        'Read/Write', 'Ride', 'Secret Language (Battle Tongue)', 'SecretSigns (Scout or Templar)', 
@@ -812,7 +812,7 @@ def career_selection(career_name):
             'Career Entries': ['Knight', 'Witch Hunter'],
             'Career Exits': ['Captain', 'Champion', 'Noble Lord', 'Witch Hunter']},
         'Master Thief Advance Scheme': {
-            'Statblock': [20, 20, 10, 10, 40, 25, 20, 25, 6, 0, 0, 0, 0, 0, 0],
+            'Statblock': [20, 20, 10, 10, 40, 25, 20, 25, 6, 0, 0, 0, 0, 0, 0, 0],
             'Skills': ['Charm', 'Concealment', 'Disguise', 'Dodge Blow', 'Evaluate', 'Gamble or Lip Reading', 'Gossip',
                        'Perception', 'Pick Lock', 'Read/ Scale Sheer Surface', 'Secret Language (Thieves’ Tongue)', 
                        'SecretSigns (Thief)', 'Search', 'Silent Move', 'Sleight of Hand', 'Swim'],
@@ -823,7 +823,7 @@ def career_selection(career_name):
             'Career Entries': ['Cat Burglar', 'Crime Lord', 'Highwayman', 'Racketeer', 'Spy'],
             'Career Exits': ['Crime Lord', 'Explorer', 'Outlaw', 'Targeteer']},
         'Master Wizard Advance Scheme': {
-            'Statblock': [10, 10, 0, 10, 15, 30, 35, 15, '=4', 0, 0, 0, 3, 0, 0],
+            'Statblock': [10, 10, 0, 10, 15, 30, 35, 15, '=4', 0, 0, 0, 3, 0, 0, 0],
             'Skills': ['Academic Knowledge (Magic)', 'Academic Knowledge (any two)', 'Channelling', 
                        'Charm or Common Knowledge (any two)', 'Gossip or Magical Sense', 'Read/Write', 
                        'Speak Arcane Language(Magick)', 'Speak Arcane Language (Daemonic orArcane Elf)', 
@@ -834,7 +834,7 @@ def career_selection(career_name):
             'Career Entries': ['Journeyman Wizard'],
             'Career Exits': ['Explorer', 'Scholar', 'Wizard Lord']},
         'Mate Advance Scheme': {
-            'Statblock': [15, 15, 10, 15, 10, 10, 10, 10, 4, 0, 0, 0, 0, 0, 0],
+            'Statblock': [15, 15, 10, 15, 10, 10, 10, 10, 4, 0, 0, 0, 0, 0, 0, 0],
             'Skills': ['Command', 'Common Knowledge (any two)', 'Consume Alcohol', 'Dodge Blow', 'Gamble', 'Gossip', 
                        'Row', 'Sail', 'Speak Language (Breton', 'Kislevian', 'orNorse)', 'Swim', 'Trade (Shipwright)'],
             'Talents': ['Resistance to Disease', 'Seasoned Traveller', 'Street Fighting'],
@@ -842,7 +842,7 @@ def career_selection(career_name):
             'Career Entries': ['Marine', 'Seaman'],
             'Career Exits': ['Explorer', 'Merchant', 'Navigator', 'Sea Captain']},
         'Merchant Advance Scheme': {
-            'Statblock': [10, 10, 5, 5, 10, 25, 20, 20, 4, 0, 0, 0, 0, 0, 0],
+            'Statblock': [10, 10, 5, 5, 10, 25, 20, 20, 4, 0, 0, 0, 0, 0, 0, 0],
             'Skills': ['Charm', 'Common Knowledge (any two)', 'Evaluate', 'Gossip', 'Haggle', 'Read/Write', 'Ride', 
                        'Secret Language (Guild Tongue)', 'Speak Language ( Estalian', 'Kislevian', 'or Norse)', 
                        'Speak Language(Reikspiel)', 'Trade (Merchant)'],
@@ -852,7 +852,7 @@ def career_selection(career_name):
                                'Tradesman'],
             'Career Exits': ['Guild Master', 'Militiaman', 'Racketeer', 'Spy']},
         'Minstrel Advance Scheme': {
-            'Statblock': [10, 10, 0, 0, 15, 10, 5, 25, 4, 0, 0, 0, 0, 0, 0],
+            'Statblock': [10, 10, 0, 0, 15, 10, 5, 25, 4, 0, 0, 0, 0, 0, 0, 0],
             'Skills': ['Charm', 'Common Knowledge (any two)', 'Perception', 'Performer (Musician)', 
                        'Performer (Singer)', 'Read/Write', 'Speak Language (Breton', 'Eltharin or Tilean)'],
             'Talents': ['Etiquette', 'Pubic Speaking'],
@@ -860,7 +860,7 @@ def career_selection(career_name):
             'Career Entries': ['Entertainer'],
             'Career Exits': ['Charlatan', 'Demagogue', 'Highwayman', 'Student']},
         'Navigator Advance Scheme': {
-            'Statblock': [10, 10, 5, 5, 10, 25, 10, 5, 4, 0, 0, 0, 0, 0, 0],
+            'Statblock': [10, 10, 5, 5, 10, 25, 10, 5, 4, 0, 0, 0, 0, 0, 0, 0],
             'Skills': ['Academic Knowledge (Astronomy)', 'Common Knowledge (any two)', 'Navigation', 'Perception', 
                        'Read/Write', 'Speak Language (Classical)', 'Swim', 'Trade(Cartographer)'],
             'Talents': ['Orientation'],
@@ -868,7 +868,7 @@ def career_selection(career_name):
             'Career Entries': ['Boatman', 'Fisherman', 'Mate', 'Scribe', 'Seaman'],
             'Career Exits': ['Artisan', 'Explorer', 'Scholar', 'Sea Captain']},
         'Noble Lord Advance Scheme': {
-            'Statblock': [25, 15, 10, 10, 10, 20, 20, 30, 6, 0, 0, 0, 0, 0, 0],
+            'Statblock': [25, 15, 10, 10, 10, 20, 20, 30, 6, 0, 0, 0, 0, 0, 0, 0],
             'Skills': ['Academic Knowledge (History or Strategy/Tactics)', 'Academic Knowledge (Genealogy/Heraldry)', 
                        'Command', 'Common Knowledge (the Empire)', 'Gossip', 'Perception', 'Read/Write', 'Ride',
                        'Speak Language (Classical)', 'Speak Language (Reikspiel)'],
@@ -878,7 +878,7 @@ def career_selection(career_name):
             'Career Entries': ['Courtier', 'Knight', 'Knight of the Inner Politician', 'Sea Captain'],
             'Career Exits': ['Captain', 'Knight', 'Scholar', 'Sea Captain']},
         'Outlaw Chief Advance Scheme': {
-            'Statblock': [20, 30, 10, 20, 10, 10, 10, 20, 6, 0, 0, 0, 0, 0, 0],
+            'Statblock': [20, 30, 10, 20, 10, 10, 10, 20, 6, 0, 0, 0, 0, 0, 0, 0],
             'Skills': ['Academic Knowledge (Strategy/Tactics)', 'Common Knowledge (the Empire)', 'Concealment', 
                        'Follow Trail', 'Perception', 'Ride', 'Scale Sheer Surface', 'SecretLanguage (Battle Tongue)', 
                        'Secret Language (Thieves’Tongue)', 'Secret Signs (Scout or Thief)', 'Silent Move'],
@@ -890,7 +890,7 @@ def career_selection(career_name):
                                'Veteran'],
             'Career Exits': ['Assassin', 'Captain', 'Crime Lord', 'Demagogue']},
         'Physician Advance Scheme': {
-            'Statblock': [0, 0, 10, 10, 15, 30, 20, 15, 4, 0, 0, 0, 0, 0, 0],
+            'Statblock': [0, 0, 10, 10, 15, 30, 20, 15, 4, 0, 0, 0, 0, 0, 0, 0],
             'Skills': ['Academic Knowledge (Science)', 'Heal', 'Perception', 'Prepare Poison', 'Read/Write', 
                        'Speak Language (Classical)', 'Trade (Apothecary)'],
             'Talents': ['Resistance to Disease', 'Strike to Stun', 'Surgery'],
@@ -898,7 +898,7 @@ def career_selection(career_name):
             'Career Entries': ['Barber-Surgeon', 'Interrogator', 'Student'],
             'Career Exits': ['Friar', 'Guild Master', 'Scholar', 'Spy']},
         'Pistolier Advance Scheme': {
-            'Statblock': [20, 20, 10, 10, 15, 0, 15, 15, 4, 0, 0, 0, 0, 0, 0],
+            'Statblock': [20, 20, 10, 10, 15, 0, 15, 15, 4, 0, 0, 0, 0, 0, 0, 0],
             'Skills': ['Animal Care', 'Dodge Evaluate or Gossip', 'Perception', 'Secret Signs (Scout)'],
             'Talents': ['Master Gunner', 'Quick Draw', 'Rapid Reload', 'Sharpshooter', 
                         'Specialist WeaponGroup (Gunpowder)', 'Mighty Shot', 'SureShot'],
@@ -907,7 +907,7 @@ def career_selection(career_name):
             'Career Entries': ['Engineer', 'Noble'],
             'Career Exits': ['Courtier', 'Duellist', 'Knight', 'Veteran']},
         'Politician Advance Scheme': {
-            'Statblock': [5, 5, 5, 10, 0, 20, 10, 20, 4, 0, 0, 0, 0, 0, 0],
+            'Statblock': [5, 5, 5, 10, 0, 20, 10, 20, 4, 0, 0, 0, 0, 0, 0, 0],
             'Skills': ['Academic Knowledge (History or Genealogy/Heraldry)', 'Academic Knowledge (Law)', 'Blather', 
                        'Charm', 'Common Knowledge (the Empire)', 'Evaluate', 'Haggle', 'Perception', 
                        'Performer (Actor)', 'Read/ Speak Language (Reikspiel)'],
@@ -917,7 +917,7 @@ def career_selection(career_name):
                                'Herald', 'High Priest', 'Merchant', 'Noble', 'Peasant', 'Racketeer', 'Toll Keeper'],
             'Career Exits': ['Courtier', 'Crime Lord', 'Demagogue', 'Noble Racketeer', 'Steward']},
         'Priest Advance Scheme': {
-            'Statblock': [10, 10, 5, 10, 5, 10, 20, 15, 4, 0, 0, 0, 1, 0, 0],
+            'Statblock': [10, 10, 5, 10, 5, 10, 20, 15, 4, 0, 0, 0, 1, 0, 0, 0],
             'Skills': ['Academic Knowledge (any one)', 'Academic Knowledge (Theology)', 'Channelling', 
                        'Common Knowledge (any two)', 'Gossip', 'Magical Sense', 'Perception', 'Read/Write', 
                        'Ride orSwim', 'Speak Arcane Language (Magick)', 'SpeakLanguage (any two)'],
@@ -927,7 +927,7 @@ def career_selection(career_name):
             'Career Entries': ['Flagellant', 'Friar', 'Initiate'],
             'Career Exits': ['Anointed Priest', 'Flagellant', 'Steward']},
         'Racketeer Advance Scheme': {
-            'Statblock': [20, 15, 15, 10, 10, 0, 15, 10, 5, 0, 0, 0, 0, 0, 0],
+            'Statblock': [20, 15, 15, 10, 10, 0, 15, 10, 5, 0, 0, 0, 0, 0, 0, 0],
             'Skills': ['Command', 'Common Knowledge (the Empire)', 'Dodge Blow', 'Evaluate', 'Gossip', 'Haggle',
                        'Perception', 'Shadowing'],
             'Talents': ['Menacing', 'Street Fighting', 'Streetwise', 'Strike Mighty Blow', 'Strike to Stun'],
@@ -936,7 +936,7 @@ def career_selection(career_name):
                                'Protagonist', 'Spy', 'Thug'],
             'Career Exits': ['Fence', 'Master Thief', 'Politician', 'Outlaw Chief']},
         'Scholar Advance Scheme': {
-            'Statblock': [5, 5, 5, 5, 10, 30, 15, 15, 4, 0, 0, 0, 0, 0, 0],
+            'Statblock': [5, 5, 5, 5, 10, 30, 15, 15, 4, 0, 0, 0, 0, 0, 0, 0],
             'Skills': ['Academic Knowledge (any three)', 'Common Knowledge (any three)', 
                        'Evaluate or Trade (Cartographer)', 'Perception', 'Read/Write', 'SpeakLanguage (any three)',
                        'Speak Language (Classical)'],
@@ -947,7 +947,7 @@ def career_selection(career_name):
                                'Student'],
             'Career Exits': ['Apprentice Wizard', 'Explorer', 'Merchant', 'Physician', 'Steward']},
         'Scout Advance Scheme': {
-            'Statblock': [20, 20, 10, 10, 15, 20, 15, 0, 6, 0, 0, 0, 0, 0, 0],
+            'Statblock': [20, 20, 10, 10, 15, 20, 15, 0, 6, 0, 0, 0, 0, 0, 0, 0],
             'Skills': ['Animal Care', 'Common Knowledge (any two)', 'Concealment', 'Dodge Blow', 'Follow Trail', 
                        'Perception', 'Ride', 'Secret Language (Ranger Tongue)', 'Secret Signs (Scout)', 'Silent Move', 
                        'Speak Language (any two)'],
@@ -959,7 +959,7 @@ def career_selection(career_name):
                                'Kithband Messenger', 'Miner', 'Outrider', 'Roadwarden', 'Vagabond', 'Woodsman'],
             'Career Exits': ['Explorer', 'Outlaw Chief', 'Sergeant', 'Vampire Hunter', 'Ghost Strider']},
         'Sea Captain Advance Scheme': {
-            'Statblock': [25, 20, 15, 20, 20, 20, 25, 30, 6, 0, 0, 0, 0, 0, 0],
+            'Statblock': [25, 20, 15, 20, 20, 20, 25, 30, 6, 0, 0, 0, 0, 0, 0, 0],
             'Skills': ['Academic Knowledge (Strategy/Tactics)', 'Animal Training', 'Command', 
                        'Common Knowledge (anythree)', 'Dodge Blow', 'Perception', 'Sail', 'SpeakLanguage (any three)',
                        'Swim', 'Trade (Cartographer orShipwright)'],
@@ -969,7 +969,7 @@ def career_selection(career_name):
             'Career Entries': ['Explorer', 'Mate', 'Navigator', 'Noble Lord'],
             'Career Exits': ['Explorer', 'Noble Lord', 'Scholar', 'Spy']},
         'Sergeant Advance Scheme': {
-            'Statblock': [20, 15, 10, 10, 10, 10, 10, 20, 4, 0, 0, 0, 0, 0, 0],
+            'Statblock': [20, 15, 10, 10, 10, 10, 10, 20, 4, 0, 0, 0, 0, 0, 0, 0],
             'Skills': ['Academic Knowledge (Strategy/Tactics)', 'Common Knowledge (any two)', 'Dodge Blow', 
                        'Intimidate', 'Perception', 'Ride or Swim', 'Secret Language (Battle Tongue)', 
                        'Speak Language (Tilean)'],
@@ -981,7 +981,7 @@ def career_selection(career_name):
                                'Squire', 'Targeteer', 'Watchman'],
             'Career Exits': ['Captain', 'Duellist', 'Judicial Champion', 'Knight']},
         'Spy Advance Scheme': {
-            'Statblock': [15, 15, 5, 10, 20, 20, 35, 20, 4, 0, 0, 0, 0, 0, 0],
+            'Statblock': [15, 15, 5, 10, 20, 20, 35, 20, 4, 0, 0, 0, 0, 0, 0, 0],
             'Skills': ['Charm', 'Common Knowledge (any two)', 'Disguise', 'Gossip', 'Lip Reading', 'Performer (Actor)',
                        'Pick Lock', 'Shadowing', 'Sleight of Hand', 'Secret Language (any one)', 'Silent Move',
                        'Speak Language (anythree)'],
@@ -991,7 +991,7 @@ def career_selection(career_name):
                                'Sea Servant'],
             'Career Exits': ['Assassin', 'Explorer', 'Master Thief', 'Racketeer']},
         'Steward Advance Scheme': {
-            'Statblock': [10, 10, 10, 10, 0, 30, 20, 25, 4, 0, 0, 0, 0, 0, 0],
+            'Statblock': [10, 10, 10, 10, 0, 30, 20, 25, 4, 0, 0, 0, 0, 0, 0, 0],
             'Skills': ['Academic Knowledge (Law)', 'Charm', 'Common Knowledge (the Empire)', 'Evaluate', 'Haggle', 
                        'Intimidate', 'Perception', 'Read/Write', 'Search', 'Speak Language (Reikspiel)', 
                        'Trade (Merchant)'],
@@ -1000,7 +1000,7 @@ def career_selection(career_name):
             'Career Entries': ['Courtier', 'Politician', 'Priest', 'Scholar', 'Valet'],
             'Career Exits': ['Crime Lord', 'Fence', 'Merchant', 'Noble']},
         'Targeteer Advance Scheme': {
-            'Statblock': [0, 35, 10, 10, 25, 10, 20, 15, 4, 0, 0, 0, 0, 0, 0],
+            'Statblock': [0, 35, 10, 10, 25, 10, 20, 15, 4, 0, 0, 0, 0, 0, 0, 0],
             'Skills': ['Common Knowledge (the Empire)', 'Gossip', 'Outdoor Survival', 'Perception', 'Search',
                        'Sleight of Hand'],
             'Talents': ['Mighty Shot', 'Rapid Reload', 'Sharpshooter', 'Specialist Weapon Group (Longbow)',
@@ -1009,7 +1009,7 @@ def career_selection(career_name):
             'Career Entries': ['Bounty Hunter', 'Hunter', 'Ghost Strider', 'Master Thief', 'Vampire Hunter', 'Veteran'],
             'Career Exits': ['Assassin', 'Champion', 'Duellist', 'Sergeant']},
         'Vampire Hunter Advance Scheme': {
-            'Statblock': [20, 20, 10, 20, 15, 15, 20, 0, 4, 0, 0, 0, 0, 0, 0],
+            'Statblock': [20, 20, 10, 20, 15, 15, 20, 0, 4, 0, 0, 0, 0, 0, 0, 0],
             'Skills': ['Academic Knowledge (History or Necromancy)', 'Common Knowledge (the Empire)', 'Concealment',
                        'Dodge Blow', 'Follow Trail', 'Perception', 'Scale Sheer Shadowing', 'Search', 'Silent Move', 
                        'Speak Language(Classical)'],
@@ -1020,7 +1020,7 @@ def career_selection(career_name):
             'Career Entries': ['Bounty Hunter', 'Field Warden', 'Ghost Strider', 'Knight', 'Scout', 'Tomb Robber'],
             'Career Exits': ['Demagogue', 'Initiate', 'Knight', 'Targeteer', 'Witch Hunter']},
         'Veteran Advance Scheme': {
-            'Statblock': [20, 20, 10, 10, 15, 0, 15, 0, 6, 0, 0, 0, 0, 0, 0],
+            'Statblock': [20, 20, 10, 10, 15, 0, 15, 0, 6, 0, 0, 0, 0, 0, 0, 0],
             'Skills': ['Common Knowledge (the Empire)', 'Consume Dodge Blow', 'Gamble', 'Gossip', 'Intimidate', 
                        'Secret Language (Battle Tongue)'],
             'Talents': ['Mighty Shot or Strike Mighty Blow', 'Rapid Reload or Strike to Injure', 
@@ -1030,7 +1030,7 @@ def career_selection(career_name):
                                'Pistolier', 'Pit Fighter', 'Runebearer', 'Soldier', 'Squire'],
             'Career Exits': ['Champion', 'Judicial Champion', 'Outlaw', 'Sergeant', 'Targeteer']},
         'Witch Hunter Advance Scheme': {
-            'Statblock': [30, 30, 15, 15, 15, 15, 35, 20, 6, 0, 0, 0, 0, 0, 0],
+            'Statblock': [30, 30, 15, 15, 15, 15, 35, 20, 6, 0, 0, 0, 0, 0, 0, 0],
             'Skills': ['Academic Knowledge (Magic)', 'Academic Knowledge (Necromancy)', 'Academic Knowledge (Theology)',
                        'Command', 'Common Knowledge (the Empire)', 'Intimidate', 'Perception', 'Ride', 'Search',
                        'Silent Move', 'SpeakLanguage (any one)'],
@@ -1043,7 +1043,7 @@ def career_selection(career_name):
                                'Knight of the Inner Circle', 'Vampire Hunter'],
             'Career Exits': ['Captain', 'Champion', 'Demagogue', 'Initiate', 'Knight of the Inner Circle']},
         'Wizard Lord Advance Scheme': {
-            'Statblock': [15, 15, 5, 15, 20, 35, 40, 20, 5, 0, 0, 0, 4, 0, 0],
+            'Statblock': [15, 15, 5, 15, 20, 35, 40, 20, 5, 0, 0, 0, 4, 0, 0, 0],
             'Skills': ['Academic Knowledge (Magic)', 'Academic Knowledge (any three)', 'Channelling', 
                        'Charm or Intimidate', 'CommonKnowledge (any three)', 'Magical Sense', 'Read/Write', 
                        'Speak Arcane Language (Magick)', 'Speak Arcane Language(Daemonic or Arcane Elf)', 

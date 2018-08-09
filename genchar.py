@@ -12,15 +12,6 @@ import career_listf as cl
 race = ['dwarf', 'elf', 'halfling', 'human']
 gender = ('male', 'female')
 
-class Character:
-    def __str__(self):
-        pass
-
-    def __init__(self, first, last):
-        self.first = first
-        self.last = last
-
-
 def build_random_char():
     rand_race = race[random.randint(0, 3)]
     rand_gender = gender[random.randint(0, 1)]
@@ -39,11 +30,14 @@ def build_random_char():
     #get career info for selected career
     sel_career = cl.career_selection(sel_career_name + ' Advance Scheme')
     mp_adv = list(sel_career['Statblock'])[0:8]
-    sec_adv = list(sel_career['Statblock'])[7:]
+    sec_adv = list(sel_career['Statblock'])[8:]
     mp_adv = '\t'.join(str(li) for li in mp_adv)
     sec_adv = '\t'.join(str(li) for li in sec_adv)
-    #sel_career['Skills'] = '\t'.join(sel_career['Skills'])
-    #sel_career['Talents'] = '\t'.join(sel_career['Talents'])
+    adv_skill = sorted(sel_career['Skills'])
+    adv_talent = sorted(sel_career['Talents'])
+    trappings = sorted(sel_career['Trappings'])
+    career_entries =sel_career['Career Entries']
+    career_exits =sel_career['Career Exits']
 
     charout = {}
     charout['name'] = pd.get_names(rand_race, rand_gender)
@@ -67,9 +61,11 @@ def build_random_char():
     charout['secondary_profile_header'] = sp_key
     charout['secondary_profile'] = sp_value
     charout['secondary_profile_adv'] = sec_adv
-    charout['adv_skill'] = sel_career['Skills']
-    charout['adv_talent'] = sel_career['Talents']
-    charout['trappings'] = sel_career['Trappings']
+    charout['adv_skill'] = adv_skill
+    charout['adv_talent'] = adv_talent
+    charout['trappings'] = trappings
+    charout['career_entries'] = career_entries
+    charout['career_exits'] = career_exits
 
     #charout['starting_stat_block'] = random_stat_blocks(rand_race)
 
@@ -79,7 +75,7 @@ def build_random_char():
 def random_stat_blocks(race):
     # Generate Main and Secondary Profiles
     mp, sp = races.profiles(race)
-
+    str_bonus, tough_bonus = '', ''
     # Get starting Skills and Talents based on rand_race
     #ski, tal = skills.skills_talents(race)
 
@@ -88,6 +84,10 @@ def random_stat_blocks(race):
         mp_key = mp_key + key + '\t'
 
     for key, value in mp.items():
+        if key == 'S':
+            str_bonus = int(value/10)
+        if key == 'T':
+            tough_bonus = int(value/10)
         mp_value = str(mp_value) + str(value) + '\t'
 
     sp_key, sp_value = '', ''
@@ -95,7 +95,13 @@ def random_stat_blocks(race):
         sp_key = sp_key + key + '\t'
 
     for key, value in sp.items():
+        if key == 'SB':
+            value = str_bonus
+        if key == 'TB':
+            value = tough_bonus
         sp_value = str(sp_value) + str(value) + '\t'
+
+
 
     return (mp_key, mp_value, sp_key, sp_value)
 
@@ -106,23 +112,24 @@ def save_character(charout):
 def load_character(char):
     with open('characters\{}.dat'.format(char), 'rb') as f:
         charin = pickle.load(f)
-
-    return format_sheet(charin)
+    return charin
 
 def format_sheet(charin):
     charin['weight'] = str(charin['weight'])
 
-    #skills = charin['skills']
-    charin['skills'] = '\n'.join(charin['skills'])
-    charin['talents'] = '\n'.join(charin['talents'])
-    charin['adv_skill'] = ', '.join(charin['adv_skill'])
-    charin['adv_talent'] = ', '.join(charin['adv_talent'])
-    charin['trappings'] = ', '.join(charin['trappings'])
+    # skills = charin['skills']
+    skills = '\n'.join(charin['skills'])
+    talents = '\n'.join(charin['talents'])
+    adv_skill = '\n'.join(charin['adv_skill'])
+    adv_talent = '\n'.join(charin['adv_talent'])
+    trappings = '\n'.join(charin['trappings'])
+    career_entries = '\n'.join(charin['career_entries'])
+    career_exits = '\n'.join(charin['career_exits'])
 
     sheet = """Name: {name} the {career}
-    Race: {race:15s}Gender: {gender:15s}Age: {age}
-    Height: {height:13s}Hair Color: {hair_color:10s}Siblings: {siblings}
-    Weight: {weight:13s}Eye Color: {eye_color}
+    Race: {race} Gender: {gender} Age: {age}
+    Height: {height} Hair Color: {hair_color} Siblings: {siblings}
+    Weight: {weight} Eye Color: {eye_color}
     Birthplace: {birthplace}
     Star Sign: {starsign}
     Distinguishing Marks: {marks}
@@ -137,25 +144,33 @@ def format_sheet(charin):
     
     Trappings:
     -------
-    {trappings}
+    {}
     
     Skills:
     -------
-    {skills}
+    {}
        
     Talents:
     -------
-    {talents}
+    {}
     
-    Skill Advances:
+    Skill Advancements:
     -------
-    {adv_skill}
+    {}
     
-    Talent Advances:
+    Talent Advancements:
     -------
-    {adv_talent}
+    {}
     
-    """.format(**charin).replace('    ','')
+    Career Entries
+    -------
+    {}
+    
+    Career Exits
+    -------
+    {}
+    
+    """.format(trappings, skills, talents, adv_skill, adv_talent, career_entries,career_exits, **charin).replace('    ','')
 
     return sheet
 
@@ -173,14 +188,20 @@ def mainloop(option):
             mainloop('g')
         elif ser.lower() == 'r':
             mainloop('g')
+        elif ser.lower() == 'e':
+            print('Now exiting.')
         else:
-            print('Have a nice day')
+            ser = input('[S]ave,[E]xit,[R]eroll: ')
+            mainloop(ser)
 
     elif option.lower() == 'l':
         char = input('Character name: ')
-        print(load_character(char))
+        lc = load_character(char)
+        print(format_sheet(lc))
     else:
         print('Not a valid selection, please try again.')
+        option = input('Would you like to [G]enerate a Random Character or [L]oad a character?')
+        mainloop(option)
 
 if __name__=='__main__':
     option = input('Would you like to [G]enerate a Random Character or [L]oad a character?')
