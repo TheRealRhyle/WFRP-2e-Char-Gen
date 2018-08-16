@@ -22,7 +22,10 @@ def build_random_char():
     ski = sorted(ski)
     tal = sorted(tal)
 
-    mp_key, mp_value, sp_key, sp_value = random_stat_blocks(rand_race)
+    ski = select_option(ski)
+    tal = select_option(tal)
+
+    mp_key, mp_value, sp_key, sp_value = random_stat_blocks(rand_race, tal)
 
     # Select random career
     sel_career_name = careers.starting_career(rand_race)
@@ -40,8 +43,6 @@ def build_random_char():
     career_exits =sel_career['Career Exits']
 
     trappings = select_option(trappings)
-    ski = select_option(ski)
-    tal = select_option(tal)
 
     charout = {}
     charout['name'] = pd.get_names(rand_race, rand_gender)
@@ -70,33 +71,35 @@ def build_random_char():
     charout['trappings'] = trappings
     charout['career_entries'] = career_entries
     charout['career_exits'] = career_exits
-
-    #charout['starting_stat_block'] = random_stat_blocks(rand_race)
-
     return charout
 
 def perm_talen_adj(tal, mp_value, sp_value):
     # Test for perm stat adjustments
+    perm_adjust_talents = {'Coolheaded': ('WP', 5), 'Fleet Footed': ('M', 1), 'Hardy': ('W', 1),
+                           'Lightning Reflexes': ('Ag', 5), 'Marksman': ('BS', 5), 'Savvy': ('Int', 5),
+                           'Suave': ('Fel', 5), 'Very Resilient': ('T', 5), 'Very Strong': ('S', 5),
+                           'Warrior Born': ('WS', 5)}
 
-    perm_adjust_talents = {'Coolheaded': 5, 'Fleet Footed': 1, 'Hardy': 1, 'Lightning Reflexes': 5, 'Marksman': 5,
-                           'Savvy': 5, 'Suave': 5, 'Very Resilient': 5, 'Very Strong': 5, 'Warrior Born': 5 }
-
-    print(mp_value)
     tal_count = 0
     while tal_count < len(tal):
         # for x in range(len(tal)-1):
         if tal[tal_count] in perm_adjust_talents:
-            if tal[tal_count] == 'Suave':
-                mp_value[7] = perm_adjust_talents['Suave']
-            tal_count += 1
+            talent_adj = perm_adjust_talents[tal[tal_count]]
+
+            if talent_adj[0] in mp_value.keys():
+                mp_value[talent_adj[0]] = mp_value[talent_adj[0]] + talent_adj[1]
+            elif talent_adj[0] in sp_value.keys():
+                sp_value[talent_adj[0]] = sp_value[talent_adj[0]] + talent_adj[1]
 
         tal_count += 1
     return mp_value, sp_value
 
-def random_stat_blocks(race):
+def random_stat_blocks(race, tal):
     # Generate Main and Secondary Profiles
     mp, sp = races.profiles(race)
     str_bonus, tough_bonus = '', ''
+
+    perm_talen_adj(tal, mp, sp)
 
     mp_key, mp_value = '', ''
     for key, value in mp.items():
