@@ -2,7 +2,7 @@
 # Created as a personal project
 import pickle
 import random
-
+import re
 import careers
 import personal_details as pd
 import races
@@ -170,11 +170,13 @@ def format_sheet(charin):
     Main Profile:\t{main_profile_header}
     Main Profile:\t{main_profile}
     Main Advance:\t{main_profile_adv}
-    
+    Advance Taken: [  ][  ][  ][  ][  ][  ][  ][  ]
+        
     Sec Profile:\t{secondary_profile_header}
     Sec Profile:\t{secondary_profile}
     Sec Advance:\t{secondary_profile_adv}
-    
+    Advance Taken: [  ][  ][  ][  ][  ][  ][  ][  ]
+        
     Trappings:
     -------
     {}
@@ -205,6 +207,12 @@ def format_sheet(charin):
     
     """.format(trappings, skills, talents, adv_skill, adv_talent, career_entries,career_exits, **charin).replace('    ','')
 
+    sheet_as_html = sheet.replace('\n','<br>')
+    header = '<html><title>{name}</title><body>'.format(**charin)
+    with open('characters\{name}.html'.format(**charin),'w+') as file:
+        file.write(header)
+        file.write(sheet_as_html)
+        file.write('</body></html>')
     return sheet
 
 def mainloop(option):
