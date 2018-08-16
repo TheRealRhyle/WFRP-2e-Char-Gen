@@ -16,7 +16,7 @@ def starting_career(race):
                      'Valet', 'Watchman'],
         'human': ['Agitator', 'Apprentice Wizard', 'Bailiff', 'Barber-Surgeon', 'Boatman', 'Bodyguard', 'Bone Picker',
                   'Bounty Hunter', 'Burgher', 'Camp Follower', 'Charcoal-Burner', 'Coachman', 'Entertainer',
-                  'Estalian Diestro', 'Ferryman', 'Fisherman', 'Grave Tobber', 'Hedge Wizard', 'Hunter', 'Initiate',
+                  'Estalian Diestro', 'Ferryman', 'Fisherman', 'Grave Robber', 'Hedge Wizard', 'Hunter', 'Initiate',
                   'Jailer', 'Kislevite Kossar', 'Marine', 'Mercenary', 'Messenger', 'Militiaman', 'Miner', 'Noble',
                   'Norse Berserker', 'Outlaw', 'Outrider', 'Peasant', 'Pit Fighter', 'Protagonist', 'Rat Catcher',
                   'Roadwarden', 'Rogue', 'Scribe', 'Seaman', 'Servant', 'Smuggler', 'Soldier', 'Squire', 'Student',

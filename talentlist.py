@@ -49,7 +49,7 @@ dict_talent = {'Acute Hearing':'Your hearing is exceptionally good. You gain a +
 'Resistance to Magic':'You are naturally resistant to the effects of magic. You gain a +10% bonus on Will Power Tests to resistmagic.',
 'Resistance to Poision':'Your hardiness allows you to ignore the effects of many poisons. You gain a +10% bonus on Toughness Teststo resist poison.',
 'Rover':'You are at home in the wild. You gain a +10% bonus on Concealment and Silent Move Skill Tests when in rurallocations.',
-'Savvy':'You gain a permanent +5% bonus to your Intelligence Characteristic. Modify your starting profile to reflectthis bonus.',
+'Savvy':'You gain a permanent +5% bonus to your Intelligence Characteristic. Modify your starting profile to reflect this bonus.',
 'Schemer':'You are a master of personal politics. You gain a +10% bonus on intrigue-related Charm Tests and on WPTests to resist the Charm of others.',
 'Seasoned Traveller':'You have extensive travel experience. You gain a +10% bonus on Common Knowledge and Speak Language SkillTests.',
 'Sharpshooter':'You can make aimed shots with exceptional accuracy. When you use the aim action, your next ranged attackgains a +20% Ballistic Skill bonus instead of the normal +10%.',

@@ -39,6 +39,10 @@ def build_random_char():
     career_entries =sel_career['Career Entries']
     career_exits =sel_career['Career Exits']
 
+    trappings = select_option(trappings)
+    ski = select_option(ski)
+    tal = select_option(tal)
+
     charout = {}
     charout['name'] = pd.get_names(rand_race, rand_gender)
     charout['career'] = sel_career_name
@@ -71,13 +75,28 @@ def build_random_char():
 
     return charout
 
+def perm_talen_adj(tal, mp_value, sp_value):
+    # Test for perm stat adjustments
+
+    perm_adjust_talents = {'Coolheaded': 5, 'Fleet Footed': 1, 'Hardy': 1, 'Lightning Reflexes': 5, 'Marksman': 5,
+                           'Savvy': 5, 'Suave': 5, 'Very Resilient': 5, 'Very Strong': 5, 'Warrior Born': 5 }
+
+    print(mp_value)
+    tal_count = 0
+    while tal_count < len(tal):
+        # for x in range(len(tal)-1):
+        if tal[tal_count] in perm_adjust_talents:
+            if tal[tal_count] == 'Suave':
+                mp_value[7] = perm_adjust_talents['Suave']
+            tal_count += 1
+
+        tal_count += 1
+    return mp_value, sp_value
 
 def random_stat_blocks(race):
     # Generate Main and Secondary Profiles
     mp, sp = races.profiles(race)
     str_bonus, tough_bonus = '', ''
-    # Get starting Skills and Talents based on rand_race
-    #ski, tal = skills.skills_talents(race)
 
     mp_key, mp_value = '', ''
     for key, value in mp.items():
@@ -105,6 +124,17 @@ def random_stat_blocks(race):
 
     return (mp_key, mp_value, sp_key, sp_value)
 
+def select_option(stt_selection):
+    options = 0
+    while options < len(stt_selection):
+        if ' or ' in stt_selection[options]:
+            selection = input('You must choose between ' + stt_selection[options] + ": ")
+            stt_selection.remove(stt_selection[options])
+            stt_selection.append(selection)
+            options -= 1
+        options += 1
+    return stt_selection
+
 def save_character(charout):
     with open('characters\{}.dat'.format(charout['name']), 'wb') as f:
         pickle.dump(charout, f)
@@ -118,13 +148,13 @@ def format_sheet(charin):
     charin['weight'] = str(charin['weight'])
 
     # skills = charin['skills']
-    skills = '\n'.join(charin['skills'])
-    talents = '\n'.join(charin['talents'])
-    adv_skill = '\n'.join(charin['adv_skill'])
-    adv_talent = '\n'.join(charin['adv_talent'])
-    trappings = '\n'.join(charin['trappings'])
-    career_entries = '\n'.join(charin['career_entries'])
-    career_exits = '\n'.join(charin['career_exits'])
+    skills = ', '.join(sorted(charin['skills']))
+    talents = ', '.join(sorted(charin['talents']))
+    adv_skill = ', '.join(sorted(charin['adv_skill']))
+    adv_talent = ', '.join(sorted(charin['adv_talent']))
+    trappings = ', '.join(sorted(charin['trappings']))
+    career_entries = ', '.join(sorted(charin['career_entries']))
+    career_exits = ', '.join(sorted(charin['career_exits']))
 
     sheet = """Name: {name} the {career}
     Race: {race} Gender: {gender} Age: {age}
