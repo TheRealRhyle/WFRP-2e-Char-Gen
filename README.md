@@ -2,7 +2,7 @@
 Project status can be found here: http://changer-of-ways.blogspot.com/<br>
 I can be contacted on <a href = "http://Twitch.tv/DarkXilde">Twitch.tv/DarkXilde</a>, or Steam at DarkXilde
 
-<font size = 9>
+<font size = "1">
 Status at a glance:
 <list>
   <li>Random ‘Free Raise’
@@ -32,5 +32,4 @@ Status at a glance:
   <li>Stat line modifications based on the starting career. We added a 3rd statline: The Advancement Scheme stat line for the currently selected career.
   <li>Read in the Advancement line for the starting career.
 </list><br>
-
-</font size = 9>
+</font>
