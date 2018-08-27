@@ -2,7 +2,13 @@
 Project status can be found here: http://changer-of-ways.blogspot.com/<br>
 I can be contacted on <a href = "http://Twitch.tv/DarkXilde">Twitch.tv/DarkXilde</a>, or Steam at DarkXilde
 
+<font size = 9>
 Status at a glance:
+<list>
+  <li>Random ‘Free Raise’
+  <li>Adjust the starting characteristic profile based on the racial skills/talents
+  <li>Based on the advancement scheme randomly choose one of the advancements to take.
+</list>  
 <list>
   <li>Randomly choose one of the 4 races
   <li>Randomly select the gender
@@ -25,8 +31,6 @@ Status at a glance:
   <li>Add the Trappings allotted by the starting career.
   <li>Stat line modifications based on the starting career. We added a 3rd statline: The Advancement Scheme stat line for the currently selected career.
   <li>Read in the Advancement line for the starting career.
-</list>
+</list><br>
 
-o   Random ‘Free Raise’
-o   Adjust the starting characteristic profile based on the racial skills/talents
-o   Based on the advancement scheme randomly choose one of the advancements to take.
+</font size = 9>
