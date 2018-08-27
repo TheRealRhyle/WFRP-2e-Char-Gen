@@ -3,14 +3,14 @@ Project status can be found here: http://changer-of-ways.blogspot.com/<br>
 I can be contacted on <a href = "http://Twitch.tv/DarkXilde">Twitch.tv/DarkXilde</a>, or Steam at DarkXilde
 
 <font size = "1">
-Status at a glance:
-#TODO
+Status at a glance:<br>
+#TODO<br>
 <list>
   <li>Random ‘Free Raise’
   <li>Adjust the starting characteristic profile based on the racial skills/talents
   <li>Based on the advancement scheme randomly choose one of the advancements to take.
-</list>  
-#Done
+</list>  <br>
+#Done<br>
 <list>
   <li>Randomly choose one of the 4 races
   <li>Randomly select the gender
