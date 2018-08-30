@@ -31,7 +31,7 @@ def career_selection(career_name):
         'Barber-Surgeon Advance Scheme': {
             'Statblock': [5, 0, 0, 0, 10, 10, 10, 5, 0, 2, 0, 0, 0, 0, 0, 0],
             'Skills': ['Charm', 'Drive or Swim', 'Haggle', 'Heal', 'Read/Write',
-                       'Speak Language (Breton, Reikspiel, or Tilean)', 'Trade (Apothecary)'],
+                       'Speak Language (Breton or  Reikspiel or Tilean)', 'Trade (Apothecary)'],
             'Talents': ['Resistance to Disease or Savvy', 'Suave or Very Resilient', 'Surgery'],
             'Trappings': ['Trade Tools (Barber-Surgeon)'],
             'Career Entries': ['Initiate', 'Student'],
@@ -283,7 +283,7 @@ def career_selection(career_name):
             'Skills': ['Common Knowledge (Norsca)', 'Consume Intimidate', 'Performer (Storyteller)',
                        'Speak Language (Norse)', 'Swim'],
             'Talents': ['Frenzy', 'Menacing', 'Quick Draw', 'Specialist Weapon Group (Two-handed)'],
-            'Trappings': ['Light Armour (Leather Jerkin)', 'Bottle of Great Weapon or Shield'],
+            'Trappings': ['Light Armour (Leather Jerkin)', 'Bottle of Good Craftsmanship Spirits', 'Great Weapon or Shield'],
             'Career Entries': ['None'],
             'Career Exits': ['Mercenary', 'Pit Fighter', 'Seaman', 'Veteran']},
         'Outlaw Advance Scheme': {

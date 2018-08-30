@@ -8,6 +8,7 @@ import personal_details as pd
 import races
 import skills
 import career_listf as cl
+import export_to_html
 
 race = ['dwarf', 'elf', 'halfling', 'human']
 gender = ('male', 'female')
@@ -131,9 +132,17 @@ def select_option(stt_selection):
     options = 0
     while options < len(stt_selection):
         if ' or ' in stt_selection[options]:
-            selection = input('You must choose between ' + stt_selection[options] + ": ")
+
+            talent_selection = [ts for ts in stt_selection[options].split(" or ")]
+
+            for item in range(len(talent_selection)):
+                print(str(item+1) + ': ' + talent_selection[item])
+
+            selection = input('Please select one of the above options: ')
+
+
             stt_selection.remove(stt_selection[options])
-            stt_selection.append(selection)
+            stt_selection.append(talent_selection[int(selection)-1])
             options -= 1
         options += 1
     return stt_selection
@@ -207,12 +216,12 @@ def format_sheet(charin):
     
     """.format(trappings, skills, talents, adv_skill, adv_talent, career_entries,career_exits, **charin).replace('    ','')
 
-    sheet_as_html = sheet.replace('\n','<br>')
-    header = '<html><title>{name}</title><body>'.format(**charin)
-    with open('characters\{name}.html'.format(**charin),'w+') as file:
-        file.write(header)
-        file.write(sheet_as_html)
-        file.write('</body></html>')
+    # sheet_as_html = sheet.replace('\n','<br>')
+    # header = '<html><title>{name}</title><body>'.format(**charin)
+    # with open('characters\{name}.html'.format(**charin),'w+') as file:
+    #     file.write(header)
+    #     file.write(sheet_as_html)
+    #     file.write('</body></html>')
     return sheet
 
 def mainloop(option):
@@ -229,6 +238,10 @@ def mainloop(option):
             mainloop('g')
         elif ser.lower() == 'r':
             mainloop('g')
+        elif ser.lower() == 'h':
+            export_to_html.format_sheet(charout)
+            print(('Character: {} has been saved to characters\{}.html').format(charout['name'],charout['name']))
+            mainloop('g')
         elif ser.lower() == 'e':
             print('Now exiting.')
         else:
@@ -241,10 +254,10 @@ def mainloop(option):
         print(format_sheet(lc))
     else:
         print('Not a valid selection, please try again.')
-        option = input('Would you like to [G]enerate a Random Character or [L]oad a character?')
+        option = input('Would you like to [G]enerate a Random Character or [L]oad a character? ')
         mainloop(option)
 
 if __name__=='__main__':
-    option = input('Would you like to [G]enerate a Random Character or [L]oad a character?')
+    option = input('Would you like to [G]enerate a Random Character or [L]oad a character? ')
     print('')
     mainloop(option)

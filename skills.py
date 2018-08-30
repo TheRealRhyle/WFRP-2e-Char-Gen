@@ -6,13 +6,13 @@ def skills_talents(rce):
     random_talent_list = ['Acute Hearing', 'Ambidexterous', 'Coolheaded', 'Excellent Vision', 'Fleet Footed', 'Hardy', 'Lightning Reflexes', 'Luck', 'Marksman', 'Mimic', 'Night Vision', 'Resistance to Disease', 'Resistance to Magic', 'Resistance to Poison', 'Savvy', 'Sixth Sense', 'Strong-minded', 'Sturdy', 'Suave', 'Super Numerate', 'Very Resilient', 'Very Strong', 'Warrior Born']
 
     if rce.lower() == 'dwarf':
-        skills = ['Common Knowledge (Dwarfs)', 'Speak language (Khazalid)', 'Speak Language (Reikspiel)', 'Trade (Miner, Smith, or Stonworker)']
+        skills = ['Common Knowledge (Dwarfs)', 'Speak language (Khazalid)', 'Speak Language (Reikspiel)', 'Trade (Miner) or Trade (Smith) or Trade (Stonworker)']
         talents = ['Dwarfcraft', 'Grudge-born Fury', 'Night Vision', 'Resistance to Magic', 'Stout-hearted', 'Sturdy']
     elif rce.lower() == 'elf':
         skills = ['Common Knowledge (Elves)', 'Speak Language (Eltharin)', 'Speak Language (Reikspiel)']
         talents = ['Aethyric Attunement or Specialist Weapon Group (Longbow)', 'Coolheaded or Savvy', 'Excellent Vision', 'Night Vision']
     elif rce.lower() == 'halfling':
-        skills = ['Academic Knowledge (Geneology/Heraldry)', 'Common Knowledge (Halflings)', 'Gossip', 'Speak Language (Halfling)', 'Speak Language (Reikspiel)', 'Trade (Cook or Farmer)']
+        skills = ['Academic Knowledge (Geneology/Heraldry)', 'Common Knowledge (Halflings)', 'Gossip', 'Speak Language (Halfling)', 'Speak Language (Reikspiel)', 'Trade (Cook) or Trade (Farmer)']
         talents = ['Night Vision', 'Resistance to Chaos', 'Specialist Weapon Group (Sling)']
         # Halflings get one random talent
         _halfling_random_talent = random_talent_list[randint(0, len(random_talent_list) - 1)]
