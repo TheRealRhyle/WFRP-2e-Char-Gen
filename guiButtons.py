@@ -25,6 +25,29 @@ def exitbutton(self):
 
 
 
+        self.pb_Quit.clicked.connect(self.exitbutton)
+        self.pb_Rando.clicked.connect(self.generate_character)
+
+def generate_character(self):
+    charout = genchar.build_random_char()
+    print(charout['name'])
+    self.txtName.setText(charout['name'])
+    self.le_Race.setText(charout['race'])
+    self.le_CurrentCar.setText(charout['career'])
+    self.le_Age.setText(str(charout['age']))
+    self.le_Gender.setText(charout['gender'])
+    self.le_EyeC.setText(charout['eye_color'])
+    self.le_Weight.setText(str(charout['weight']) + " lbs")
+    self.le_HairC.setText(charout['hair_color'])
+    self.le_Height.setText(charout['height'])
+    self.le_StarSign.setText(charout['starsign'])
+    self.le_NoofSib.setText(str(charout['siblings']))
+    self.le_Birthplace.setText(charout['birthplace'])
+    self.le_Distinguish.setText(charout['marks'])
+
+def exitbutton(self):
+    exit()
+
 # """
 # Add to Ui_MainWindow
 # """
