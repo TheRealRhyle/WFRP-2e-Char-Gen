@@ -7,11 +7,11 @@
 # WARNING! All changes made in this file will be lost!
 
 from PyQt5 import QtCore, QtGui, QtWidgets
-import genchar
 
 class Ui_MainWindow(object):
     def setupUi(self, MainWindow):
         MainWindow.setObjectName("MainWindow")
+        MainWindow.setWindowModality(QtCore.Qt.ApplicationModal)
         MainWindow.resize(633, 487)
         self.centralwidget = QtWidgets.QWidget(MainWindow)
         self.centralwidget.setObjectName("centralwidget")
@@ -26,7 +26,7 @@ class Ui_MainWindow(object):
         self.txtName = QtWidgets.QPlainTextEdit(self.centralwidget)
         self.txtName.setGeometry(QtCore.QRect(180, 10, 450, 40))
         font = QtGui.QFont()
-        font.setFamily("Tahoma")
+        font.setFamily("Comic Sans MS")
         font.setPointSize(18)
         font.setBold(True)
         font.setWeight(75)
@@ -720,25 +720,28 @@ class Ui_MainWindow(object):
         self.tabTrappings.setObjectName("tabTrappings")
         self.tabWidget.addTab(self.tabTrappings, "")
         self.pb_Rando = QtWidgets.QPushButton(self.centralwidget)
-        self.pb_Rando.setGeometry(QtCore.QRect(30, 160, 75, 23))
+        self.pb_Rando.setGeometry(QtCore.QRect(30, 380, 75, 23))
         self.pb_Rando.setObjectName("pb_Rando")
         self.pb_Quit = QtWidgets.QPushButton(self.centralwidget)
-        self.pb_Quit.setGeometry(QtCore.QRect(20, 250, 75, 23))
+        self.pb_Quit.setGeometry(QtCore.QRect(30, 410, 75, 23))
         self.pb_Quit.setObjectName("pb_Quit")
+        self.listView = QtWidgets.QListView(self.centralwidget)
+        self.listView.setGeometry(QtCore.QRect(10, 60, 111, 311))
+        self.listView.setObjectName("listView")
         MainWindow.setCentralWidget(self.centralwidget)
         self.menubar = QtWidgets.QMenuBar(MainWindow)
         self.menubar.setGeometry(QtCore.QRect(0, 0, 633, 21))
         self.menubar.setObjectName("menubar")
         MainWindow.setMenuBar(self.menubar)
         self.statusbar = QtWidgets.QStatusBar(MainWindow)
+        self.statusbar.setAutoFillBackground(False)
+        self.statusbar.setSizeGripEnabled(False)
         self.statusbar.setObjectName("statusbar")
         MainWindow.setStatusBar(self.statusbar)
 
         self.retranslateUi(MainWindow)
         self.tabWidget.setCurrentIndex(0)
         QtCore.QMetaObject.connectSlotsByName(MainWindow)
-        self.pb_Quit.clicked.connect(self.exitbutton)
-        self.pb_Rando.clicked.connect(self.generate_character)
 
     def retranslateUi(self, MainWindow):
         _translate = QtCore.QCoreApplication.translate
@@ -793,66 +796,6 @@ class Ui_MainWindow(object):
         self.pb_Rando.setText(_translate("MainWindow", "TestButton"))
         self.pb_Quit.setText(_translate("MainWindow", "Quit"))
 
-    def generate_character(self):
-        charout = genchar.build_random_char()
-                
-        mp_list = charout['main_profile'].split('\t')
-        mpa_list = charout['main_profile_adv'].split('\t')
-        sp_list = charout['secondary_profile'].split('\t')
-        spa_list = charout['secondary_profile_adv'].split('\t')
-                
-        self.txtName.setPlainText(charout['name'])
-        self.le_Race.setText(charout['race'])
-        self.le_CurrentCar.setText(charout['career'])
-        self.le_Age.setText(str(charout['age']))
-        self.le_Gender.setText(charout['gender'])
-        self.le_EyeC.setText(charout['eye_color'])
-        self.le_Weight.setText(str(charout['weight']) + " lbs")
-        self.le_HairC.setText(charout['hair_color'])
-        self.le_Height.setText(charout['height'])
-        self.le_StarSign.setText(charout['starsign'])
-        self.le_NoofSib.setText(str(charout['siblings']))
-        self.le_Birthplace.setText(charout['birthplace'])
-        self.le_Distinguish.setText(charout['marks'])
-
-        self.txtSWS.setPlainText(mp_list[0])
-        self.txtSBS.setPlainText(mp_list[1])
-        self.txtSS.setPlainText(mp_list[2])
-        self.txtST.setPlainText(mp_list[3])
-        self.txtSAg.setPlainText(mp_list[4])
-        self.txtSInt.setPlainText(mp_list[5])
-        self.txtSWP.setPlainText(mp_list[6])
-        self.txtSFel.setPlainText(mp_list[7])
-
-        self.txtAWS.setPlainText(mpa_list[0])
-        self.txtABS.setPlainText(mpa_list[1])
-        self.txtAS.setPlainText(mpa_list[2])
-        self.txtAT.setPlainText(mpa_list[3])
-        self.txtAAg.setPlainText(mpa_list[4])
-        self.txtAInt.setPlainText(mpa_list[5])
-        self.txtAWP.setPlainText(mpa_list[6])
-        self.txtAFel.setPlainText(mpa_list[7])
-
-        self.txtSA.setPlainText(sp_list[0])
-        self.txtSW.setPlainText(sp_list[1])
-        self.txtSB.setPlainText(sp_list[2])
-        self.txtSTB.setPlainText(sp_list[3])
-        self.txtSM.setPlainText(sp_list[4])
-        self.txtSMag.setPlainText(sp_list[5])
-        self.txtSIP.setPlainText(sp_list[6])
-        self.txtSFP.setPlainText(sp_list[7])
-    
-        self.txtAA.setPlainText(spa_list[0])
-        self.txtAW.setPlainText(spa_list[1])
-        self.txtASB.setPlainText(spa_list[2])
-        self.txtATB.setPlainText(spa_list[3])
-        self.txtAM.setPlainText(spa_list[4])
-        self.txtAMag.setPlainText(spa_list[5])
-        self.txtAIp.setPlainText(spa_list[6])
-        self.txtAFP.setPlainText(spa_list[7])
-
-    def exitbutton(self):
-        exit()
 
 if __name__ == "__main__":
     import sys

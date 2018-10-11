@@ -7,13 +7,11 @@
 # WARNING! All changes made in this file will be lost!
 
 from PyQt5 import QtCore, QtGui, QtWidgets
-import genchar
-import guiButtons
 
 class Ui_MainWindow(object):
     def setupUi(self, MainWindow):
         MainWindow.setObjectName("MainWindow")
-        MainWindow.resize(901, 861)
+        MainWindow.resize(874, 861)
         MainWindow.setAutoFillBackground(False)
         self.centralwidget = QtWidgets.QWidget(MainWindow)
         self.centralwidget.setObjectName("centralwidget")
@@ -94,7 +92,6 @@ class Ui_MainWindow(object):
         self.txtStarSign = QtWidgets.QPlainTextEdit(self.groupBox_2)
         self.txtStarSign.setGeometry(QtCore.QRect(60, 110, 130, 21))
         self.txtStarSign.setVerticalScrollBarPolicy(QtCore.Qt.ScrollBarAlwaysOff)
-        self.txtStarSign.setHorizontalScrollBarPolicy(QtCore.Qt.ScrollBarAlwaysOff)
         self.txtStarSign.setLineWrapMode(QtWidgets.QPlainTextEdit.NoWrap)
         self.txtStarSign.setPlainText("")
         self.txtStarSign.setObjectName("txtStarSign")
@@ -738,25 +735,15 @@ class Ui_MainWindow(object):
         self.label_15.setObjectName("label_15")
         MainWindow.setCentralWidget(self.centralwidget)
         self.menubar = QtWidgets.QMenuBar(MainWindow)
-        self.menubar.setGeometry(QtCore.QRect(0, 0, 901, 21))
+        self.menubar.setGeometry(QtCore.QRect(0, 0, 874, 21))
         self.menubar.setObjectName("menubar")
         MainWindow.setMenuBar(self.menubar)
         self.statusbar = QtWidgets.QStatusBar(MainWindow)
         self.statusbar.setObjectName("statusbar")
         MainWindow.setStatusBar(self.statusbar)
+
         self.retranslateUi(MainWindow)
         QtCore.QMetaObject.connectSlotsByName(MainWindow)
-
-        header = self.tableWidget.horizontalHeader()
-        header.setSectionResizeMode(0, QtWidgets.QHeaderView.Stretch)
-        header.setSectionResizeMode(1, QtWidgets.QHeaderView.ResizeToContents)
-        header.setSectionResizeMode(2, QtWidgets.QHeaderView.ResizeToContents)
-        header.setSectionResizeMode(3, QtWidgets.QHeaderView.ResizeToContents)
-        header.setSectionResizeMode(4, QtWidgets.QHeaderView.ResizeToContents)
-        header.setSectionResizeMode(5, QtWidgets.QHeaderView.ResizeToContents)
-        header.setSectionResizeMode(6, QtWidgets.QHeaderView.Stretch)
-        self.pushButton.clicked.connect(self.exitbutton)
-        # self.pushButton_2.clicked.connect(self.generate_character)
 
     def retranslateUi(self, MainWindow):
         _translate = QtCore.QCoreApplication.translate
@@ -822,8 +809,7 @@ class Ui_MainWindow(object):
         self.groupBox_5.setTitle(_translate("MainWindow", "Armor"))
         self.label_15.setText(_translate("MainWindow", "TODO"))
 
-    def exitbutton(self,MainWindow):
-        guiButtons.exitbutton()
+import asdf_rc
 
 if __name__ == "__main__":
     import sys
