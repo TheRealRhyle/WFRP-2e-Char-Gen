@@ -144,7 +144,7 @@ def get_names(race, gender):
 
     if gender == 'male':
         first_name_list = dict_names[race][1]
-        last_name_list = dict_names[race][1]
+        last_name_list = dict_names[race][0]
     if gender == 'female':
         first_name_list = dict_names[race][0]
         last_name_list = dict_names[race][1]
@@ -162,4 +162,6 @@ def star_sign():
 
     return ssign[random_ssign]
 
-#if __name__  = __main__():
+if __name__ == '__main__':
+    for i in range(9):
+        print(get_names('human','male'))
